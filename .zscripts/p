@@ -1,0 +1,2192 @@
+==========================================
+[2026-03-13 10:58:37] Starting: bun install
+==========================================
+[BUN] Installing dependencies...
+[0.36ms] ".env"
+bun install v1.3.10 (30e609e0)
+
++ @tailwindcss/postcss@4.1.18
++ @types/react@19.2.8
++ @types/react-dom@19.2.3
++ bun-types@1.3.6
++ eslint@9.39.2
++ eslint-config-next@16.1.3
++ tailwindcss@4.1.18
++ tw-animate-css@1.4.0
++ typescript@5.9.3
++ @dnd-kit/core@6.3.1
++ @dnd-kit/sortable@10.0.0
++ @dnd-kit/utilities@3.2.2
++ @hookform/resolvers@5.2.2
++ @mdxeditor/editor@3.52.3
++ @prisma/client@6.19.2
++ @radix-ui/react-accordion@1.2.12
++ @radix-ui/react-alert-dialog@1.1.15
++ @radix-ui/react-aspect-ratio@1.1.8
++ @radix-ui/react-avatar@1.1.11
++ @radix-ui/react-checkbox@1.3.3
++ @radix-ui/react-collapsible@1.1.12
++ @radix-ui/react-context-menu@2.2.16
++ @radix-ui/react-dialog@1.1.15
++ @radix-ui/react-dropdown-menu@2.1.16
++ @radix-ui/react-hover-card@1.1.15
++ @radix-ui/react-label@2.1.8
++ @radix-ui/react-menubar@1.1.16
++ @radix-ui/react-navigation-menu@1.2.14
++ @radix-ui/react-popover@1.1.15
++ @radix-ui/react-progress@1.1.8
++ @radix-ui/react-radio-group@1.3.8
++ @radix-ui/react-scroll-area@1.2.10
++ @radix-ui/react-select@2.2.6
++ @radix-ui/react-separator@1.1.8
++ @radix-ui/react-slider@1.3.6
++ @radix-ui/react-slot@1.2.4
++ @radix-ui/react-switch@1.2.6
++ @radix-ui/react-tabs@1.1.13
++ @radix-ui/react-toast@1.2.15
++ @radix-ui/react-toggle@1.1.10
++ @radix-ui/react-toggle-group@1.1.11
++ @radix-ui/react-tooltip@1.2.8
++ @reactuses/core@6.1.9
++ @tanstack/react-query@5.90.19
++ @tanstack/react-table@8.21.3
++ class-variance-authority@0.7.1
++ clsx@2.1.1
++ cmdk@1.1.1
++ date-fns@4.1.0
++ embla-carousel-react@8.6.0
++ framer-motion@12.26.2
++ input-otp@1.4.2
++ lucide-react@0.525.0
++ next@16.1.3
++ next-auth@4.24.13
++ next-intl@4.7.0
++ next-themes@0.4.6
++ prisma@6.19.2
++ react@19.2.3
++ react-day-picker@9.13.0
++ react-dom@19.2.3
++ react-hook-form@7.71.1
++ react-markdown@10.1.0
++ react-resizable-panels@3.0.6
++ react-syntax-highlighter@15.6.6
++ recharts@2.15.4
++ sharp@0.34.5
++ sonner@2.0.7
++ tailwind-merge@3.4.0
++ tailwindcss-animate@1.0.7
++ uuid@11.1.0
++ vaul@1.1.2
++ z-ai-web-dev-sdk@0.0.17
++ zod@4.3.5
++ zustand@5.0.10
+
+827 packages installed [12.02s]
+==========================================
+[2026-03-13 10:58:49] Completed: bun install
+[LOG] Step: bun install | Duration: 12s
+==========================================
+
+==========================================
+[2026-03-13 10:58:49] Starting: bun run db:push
+==========================================
+[BUN] Setting up database...
+$ prisma db push
+Environment variables loaded from .env
+Prisma schema loaded from prisma/schema.prisma
+Datasource "db": SQLite database "custom.db" at "file:/home/z/my-project/db/custom.db"
+
+SQLite database custom.db created at file:/home/z/my-project/db/custom.db
+
+🚀  Your database is now in sync with your Prisma schema. Done in 18ms
+
+Running generate... (Use --skip-generate to skip the generators)
+[2K[1A[2K[GRunning generate... - Prisma Client
+[2K[1A[2K[G✔ Generated Prisma Client (v6.19.2) to ./node_modules/@prisma/client in 70ms
+┌─────────────────────────────────────────────────────────┐
+│  Update available 6.19.2 -> 7.5.0                       │
+│                                                         │
+│  This is a major update - please follow the guide at    │
+│  https://pris.ly/d/major-version-upgrade                │
+│                                                         │
+│  Run the following to update                            │
+│    npm i --save-dev prisma@latest                       │
+│    npm i @prisma/client@latest                          │
+└─────────────────────────────────────────────────────────┘
+
+==========================================
+[2026-03-13 10:58:50] Completed: bun run db:push
+[LOG] Step: bun run db:push | Duration: 1s
+==========================================
+
+==========================================
+[2026-03-13 10:58:50] Starting: Starting Next.js dev server
+==========================================
+[BUN] Starting development server...
+==========================================
+$ next dev -p 3000 2>&1 | tee dev.log
+[2026-03-13 10:58:50] Completed: Starting Next.js dev server
+[LOG] Step: Starting Next.js dev server | Duration: 0s
+==========================================
+
+==========================================
+[2026-03-13 10:58:50] Starting: Waiting for Next.js dev server
+==========================================
+Waiting for Next.js dev server to be ready on localhost:3000...
+Attempt 1/60: Next.js dev server not ready yet, waiting...
+▲ Next.js 16.1.3 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://21.0.5.20:3000
+- Environments: .env
+
+✓ Starting...
+Attention: Next.js now collects completely anonymous telemetry regarding usage.
+This information is used to shape Next.js' roadmap and prioritize features.
+You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+https://nextjs.org/telemetry
+
+
+  We detected TypeScript in your project and reconfigured your tsconfig.json file for you.
+  The following suggested values were added to your tsconfig.json. These values can be changed to fit your project's needs:
+
+  	- include was updated to add '.next/dev/types/**/*.ts'
+
+  The following mandatory changes were made to your tsconfig.json:
+
+  	- jsx was set to react-jsx (next.js uses the React automatic runtime)
+
+✓ Ready in 970ms
+⚠ Found a change in next.config.mjs. Restarting the server to apply the changes...
+Attempt 2/60: Next.js dev server not ready yet, waiting...
+▲ Next.js 16.1.3 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://21.0.5.20:3000
+- Environments: .env
+
+✓ Starting...
+
+  We detected TypeScript in your project and reconfigured your tsconfig.json file for you.
+  The following suggested values were added to your tsconfig.json. These values can be changed to fit your project's needs:
+
+  	- include was updated to add '.next/dev/types/**/*.ts'
+
+✓ Ready in 607ms
+⨯ ./app/layout.tsx:3:1
+Module not found: Can't resolve '@vercel/analytics/next'
+[0m [90m 1 |[39m [36mimport[39m type { [33mMetadata[39m[33m,[39m [33mViewport[39m } [36mfrom[39m [32m'next'[39m
+ [90m 2 |[39m [36mimport[39m { [33mGeist[39m[33m,[39m [33mGeist_Mono[39m } [36mfrom[39m [32m'next/font/google'[39m
+[31m[1m>[22m[39m[90m 3 |[39m [36mimport[39m { [33mAnalytics[39m } [36mfrom[39m [32m'@vercel/analytics/next'[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 4 |[39m [36mimport[39m { [33mAuthProvider[39m } [36mfrom[39m [32m'@/contexts/auth-context'[39m
+ [90m 5 |[39m [36mimport[39m [32m'./globals.css'[39m
+ [90m 6 |[39m[0m
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+
+./lib/firebase.ts:1:1
+Module not found: Can't resolve 'firebase/app'
+[0m[31m[1m>[22m[39m[90m 1 |[39m [36mimport[39m { initializeApp[33m,[39m getApps } [36mfrom[39m [32m'firebase/app'[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 2 |[39m [36mimport[39m { getAuth[33m,[39m [33mGoogleAuthProvider[39m[33m,[39m signInWithPopup[33m,[39m signOut[33m,[39m onAuthStateChanged[33m,[39m type [33mUser[39m } [36mfrom[39m [32m'firebase/auth'[39m
+ [90m 3 |[39m [36mimport[39m { getDatabase[33m,[39m ref[33m,[39m push[33m,[39m [36mset[39m[33m,[39m [36mget[39m[33m,[39m remove[33m,[39m onValue[33m,[39m query[33m,[39m orderByChild[33m,[39m limitToLast[33m,[39m serverTimestamp } [36mfrom[39m [32m'firebase/database'[39m
+ [90m 4 |[39m [36mimport[39m { getStorage[33m,[39m ref [36mas[39m storageRef[33m,[39m uploadBytes[33m,[39m getDownloadURL } [36mfrom[39m [32m'firebase/storage'[39m[0m
+
+
+
+Import traces:
+  Client Component Browser:
+    ./lib/firebase.ts [Client Component Browser]
+    ./contexts/auth-context.tsx [Client Component Browser]
+    ./contexts/auth-context.tsx [Server Component]
+    ./app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./lib/firebase.ts [Client Component SSR]
+    ./contexts/auth-context.tsx [Client Component SSR]
+    ./contexts/auth-context.tsx [Server Component]
+    ./app/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+
+./lib/firebase.ts:2:1
+Module not found: Can't resolve 'firebase/auth'
+[0m [90m 1 |[39m [36mimport[39m { initializeApp[33m,[39m getApps } [36mfrom[39m [32m'firebase/app'[39m
+[31m[1m>[22m[39m[90m 2 |[39m [36mimport[39m { getAuth[33m,[39m [33mGoogleAuthProvider[39m[33m,[39m signInWithPopup[33m,[39m signOut[33m,[39m onAuthStateChanged[33m,[39m type [33mUser[39m } [36mfrom[39m [32m'firebase/auth'[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 3 |[39m [36mimport[39m { getDatabase[33m,[39m ref[33m,[39m push[33m,[39m [36mset[39m[33m,[39m [36mget[39m[33m,[39m remove[33m,[39m onValue[33m,[39m query[33m,[39m orderByChild[33m,[39m limitToLast[33m,[39m serverTimestamp } [36mfrom[39m [32m'firebase/database'[39m
+ [90m 4 |[39m [36mimport[39m { getStorage[33m,[39m ref [36mas[39m storageRef[33m,[39m uploadBytes[33m,[39m getDownloadURL } [36mfrom[39m [32m'firebase/storage'[39m
+ [90m 5 |[39m[0m
+
+
+
+Import traces:
+  Client Component Browser:
+    ./lib/firebase.ts [Client Component Browser]
+    ./contexts/auth-context.tsx [Client Component Browser]
+    ./contexts/auth-context.tsx [Server Component]
+    ./app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./lib/firebase.ts [Client Component SSR]
+    ./contexts/auth-context.tsx [Client Component SSR]
+    ./contexts/auth-context.tsx [Server Component]
+    ./app/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+
+./lib/firebase.ts:3:1
+Module not found: Can't resolve 'firebase/database'
+[0m [90m 1 |[39m [36mimport[39m { initializeApp[33m,[39m getApps } [36mfrom[39m [32m'firebase/app'[39m
+ [90m 2 |[39m [36mimport[39m { getAuth[33m,[39m [33mGoogleAuthProvider[39m[33m,[39m signInWithPopup[33m,[39m signOut[33m,[39m onAuthStateChanged[33m,[39m type [33mUser[39m } [36mfrom[39m [32m'firebase/auth'[39m
+[31m[1m>[22m[39m[90m 3 |[39m [36mimport[39m { getDatabase[33m,[39m ref[33m,[39m push[33m,[39m [36mset[39m[33m,[39m [36mget[39m[33m,[39m remove[33m,[39m onValue[33m,[39m query[33m,[39m orderByChild[33m,[39m limitToLast[33m,[39m serverTimestamp } [36mfrom[39m [32m'firebase/database'[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 4 |[39m [36mimport[39m { getStorage[33m,[39m ref [36mas[39m storageRef[33m,[39m uploadBytes[33m,[39m getDownloadURL } [36mfrom[39m [32m'firebase/storage'[39m
+ [90m 5 |[39m
+ [90m 6 |[39m [36mconst[39m firebaseConfig [33m=[39m {[0m
+
+
+
+Import traces:
+  Client Component Browser:
+    ./lib/firebase.ts [Client Component Browser]
+    ./contexts/auth-context.tsx [Client Component Browser]
+    ./contexts/auth-context.tsx [Server Component]
+    ./app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./lib/firebase.ts [Client Component SSR]
+    ./contexts/auth-context.tsx [Client Component SSR]
+    ./contexts/auth-context.tsx [Server Component]
+    ./app/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+
+./lib/firebase.ts:4:1
+Module not found: Can't resolve 'firebase/storage'
+[0m [90m 2 |[39m [36mimport[39m { getAuth[33m,[39m [33mGoogleAuthProvider[39m[33m,[39m signInWithPopup[33m,[39m signOut[33m,[39m onAuthStateChanged[33m,[39m type [33mUser[39m } [36mfrom[39m [32m'firebase/auth'[39m
+ [90m 3 |[39m [36mimport[39m { getDatabase[33m,[39m ref[33m,[39m push[33m,[39m [36mset[39m[33m,[39m [36mget[39m[33m,[39m remove[33m,[39m onValue[33m,[39m query[33m,[39m orderByChild[33m,[39m limitToLast[33m,[39m serverTimestamp } [36mfrom[39m [32m'firebase/database'[39m
+[31m[1m>[22m[39m[90m 4 |[39m [36mimport[39m { getStorage[33m,[39m ref [36mas[39m storageRef[33m,[39m uploadBytes[33m,[39m getDownloadURL } [36mfrom[39m [32m'firebase/storage'[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 5 |[39m
+ [90m 6 |[39m [36mconst[39m firebaseConfig [33m=[39m {
+ [90m 7 |[39m   apiKey[33m:[39m [32m"AIzaSyActmXTykTLOnwaGJ2tbMpTnb0pg-1floU"[39m[33m,[39m[0m
+
+
+
+Import traces:
+  Client Component Browser:
+    ./lib/firebase.ts [Client Component Browser]
+    ./contexts/auth-context.tsx [Client Component Browser]
+    ./contexts/auth-context.tsx [Server Component]
+    ./app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./lib/firebase.ts [Client Component SSR]
+    ./contexts/auth-context.tsx [Client Component SSR]
+    ./contexts/auth-context.tsx [Server Component]
+    ./app/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+ GET / 500 in 3.8s (compile: 3.6s, render: 130ms)
+Next.js dev server is ready!
+==========================================
+[2026-03-13 10:58:59] Completed: Waiting for Next.js dev server
+[LOG] Step: Waiting for Next.js dev server | Duration: 9s
+==========================================
+
+==========================================
+[2026-03-13 10:58:59] Starting: Health check
+==========================================
+[BUN] Performing health check...
+⨯ ./app/layout.tsx:3:1
+Module not found: Can't resolve '@vercel/analytics/next'
+[0m [90m 1 |[39m [36mimport[39m type { [33mMetadata[39m[33m,[39m [33mViewport[39m } [36mfrom[39m [32m'next'[39m
+ [90m 2 |[39m [36mimport[39m { [33mGeist[39m[33m,[39m [33mGeist_Mono[39m } [36mfrom[39m [32m'next/font/google'[39m
+[31m[1m>[22m[39m[90m 3 |[39m [36mimport[39m { [33mAnalytics[39m } [36mfrom[39m [32m'@vercel/analytics/next'[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 4 |[39m [36mimport[39m { [33mAuthProvider[39m } [36mfrom[39m [32m'@/contexts/auth-context'[39m
+ [90m 5 |[39m [36mimport[39m [32m'./globals.css'[39m
+ [90m 6 |[39m[0m
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+
+./lib/firebase.ts:1:1
+Module not found: Can't resolve 'firebase/app'
+[0m[31m[1m>[22m[39m[90m 1 |[39m [36mimport[39m { initializeApp[33m,[39m getApps } [36mfrom[39m [32m'firebase/app'[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 2 |[39m [36mimport[39m { getAuth[33m,[39m [33mGoogleAuthProvider[39m[33m,[39m signInWithPopup[33m,[39m signOut[33m,[39m onAuthStateChanged[33m,[39m type [33mUser[39m } [36mfrom[39m [32m'firebase/auth'[39m
+ [90m 3 |[39m [36mimport[39m { getDatabase[33m,[39m ref[33m,[39m push[33m,[39m [36mset[39m[33m,[39m [36mget[39m[33m,[39m remove[33m,[39m onValue[33m,[39m query[33m,[39m orderByChild[33m,[39m limitToLast[33m,[39m serverTimestamp } [36mfrom[39m [32m'firebase/database'[39m
+ [90m 4 |[39m [36mimport[39m { getStorage[33m,[39m ref [36mas[39m storageRef[33m,[39m uploadBytes[33m,[39m getDownloadURL } [36mfrom[39m [32m'firebase/storage'[39m[0m
+
+
+
+Import traces:
+  Client Component Browser:
+    ./lib/firebase.ts [Client Component Browser]
+    ./contexts/auth-context.tsx [Client Component Browser]
+    ./contexts/auth-context.tsx [Server Component]
+    ./app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./lib/firebase.ts [Client Component SSR]
+    ./contexts/auth-context.tsx [Client Component SSR]
+    ./contexts/auth-context.tsx [Server Component]
+    ./app/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+
+./lib/firebase.ts:2:1
+Module not found: Can't resolve 'firebase/auth'
+[0m [90m 1 |[39m [36mimport[39m { initializeApp[33m,[39m getApps } [36mfrom[39m [32m'firebase/app'[39m
+[31m[1m>[22m[39m[90m 2 |[39m [36mimport[39m { getAuth[33m,[39m [33mGoogleAuthProvider[39m[33m,[39m signInWithPopup[33m,[39m signOut[33m,[39m onAuthStateChanged[33m,[39m type [33mUser[39m } [36mfrom[39m [32m'firebase/auth'[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 3 |[39m [36mimport[39m { getDatabase[33m,[39m ref[33m,[39m push[33m,[39m [36mset[39m[33m,[39m [36mget[39m[33m,[39m remove[33m,[39m onValue[33m,[39m query[33m,[39m orderByChild[33m,[39m limitToLast[33m,[39m serverTimestamp } [36mfrom[39m [32m'firebase/database'[39m
+ [90m 4 |[39m [36mimport[39m { getStorage[33m,[39m ref [36mas[39m storageRef[33m,[39m uploadBytes[33m,[39m getDownloadURL } [36mfrom[39m [32m'firebase/storage'[39m
+ [90m 5 |[39m[0m
+
+
+
+Import traces:
+  Client Component Browser:
+    ./lib/firebase.ts [Client Component Browser]
+    ./contexts/auth-context.tsx [Client Component Browser]
+    ./contexts/auth-context.tsx [Server Component]
+    ./app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./lib/firebase.ts [Client Component SSR]
+    ./contexts/auth-context.tsx [Client Component SSR]
+    ./contexts/auth-context.tsx [Server Component]
+    ./app/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+
+./lib/firebase.ts:3:1
+Module not found: Can't resolve 'firebase/database'
+[0m [90m 1 |[39m [36mimport[39m { initializeApp[33m,[39m getApps } [36mfrom[39m [32m'firebase/app'[39m
+ [90m 2 |[39m [36mimport[39m { getAuth[33m,[39m [33mGoogleAuthProvider[39m[33m,[39m signInWithPopup[33m,[39m signOut[33m,[39m onAuthStateChanged[33m,[39m type [33mUser[39m } [36mfrom[39m [32m'firebase/auth'[39m
+[31m[1m>[22m[39m[90m 3 |[39m [36mimport[39m { getDatabase[33m,[39m ref[33m,[39m push[33m,[39m [36mset[39m[33m,[39m [36mget[39m[33m,[39m remove[33m,[39m onValue[33m,[39m query[33m,[39m orderByChild[33m,[39m limitToLast[33m,[39m serverTimestamp } [36mfrom[39m [32m'firebase/database'[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 4 |[39m [36mimport[39m { getStorage[33m,[39m ref [36mas[39m storageRef[33m,[39m uploadBytes[33m,[39m getDownloadURL } [36mfrom[39m [32m'firebase/storage'[39m
+ [90m 5 |[39m
+ [90m 6 |[39m [36mconst[39m firebaseConfig [33m=[39m {[0m
+
+
+
+Import traces:
+  Client Component Browser:
+    ./lib/firebase.ts [Client Component Browser]
+    ./contexts/auth-context.tsx [Client Component Browser]
+    ./contexts/auth-context.tsx [Server Component]
+    ./app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./lib/firebase.ts [Client Component SSR]
+    ./contexts/auth-context.tsx [Client Component SSR]
+    ./contexts/auth-context.tsx [Server Component]
+    ./app/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+
+./lib/firebase.ts:4:1
+Module not found: Can't resolve 'firebase/storage'
+[0m [90m 2 |[39m [36mimport[39m { getAuth[33m,[39m [33mGoogleAuthProvider[39m[33m,[39m signInWithPopup[33m,[39m signOut[33m,[39m onAuthStateChanged[33m,[39m type [33mUser[39m } [36mfrom[39m [32m'firebase/auth'[39m
+ [90m 3 |[39m [36mimport[39m { getDatabase[33m,[39m ref[33m,[39m push[33m,[39m [36mset[39m[33m,[39m [36mget[39m[33m,[39m remove[33m,[39m onValue[33m,[39m query[33m,[39m orderByChild[33m,[39m limitToLast[33m,[39m serverTimestamp } [36mfrom[39m [32m'firebase/database'[39m
+[31m[1m>[22m[39m[90m 4 |[39m [36mimport[39m { getStorage[33m,[39m ref [36mas[39m storageRef[33m,[39m uploadBytes[33m,[39m getDownloadURL } [36mfrom[39m [32m'firebase/storage'[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 5 |[39m
+ [90m 6 |[39m [36mconst[39m firebaseConfig [33m=[39m {
+ [90m 7 |[39m   apiKey[33m:[39m [32m"AIzaSyActmXTykTLOnwaGJ2tbMpTnb0pg-1floU"[39m[33m,[39m[0m
+
+
+
+Import traces:
+  Client Component Browser:
+    ./lib/firebase.ts [Client Component Browser]
+    ./contexts/auth-context.tsx [Client Component Browser]
+    ./contexts/auth-context.tsx [Server Component]
+    ./app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./lib/firebase.ts [Client Component SSR]
+    ./contexts/auth-context.tsx [Client Component SSR]
+    ./contexts/auth-context.tsx [Server Component]
+    ./app/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+curl:  GET / 500 in 65ms (compile: 60ms, render: 5ms)
+(22) The requested URL returned error: 500
+Stopping Next.js dev server (PID: 325)...
+error: script "dev" was terminated by signal SIGTERM (Polite quit request)
+✓ Compiled in 4.6s
+ GET / 200 in 945ms (compile: 425ms, render: 521ms)
+Error: ENOENT: no such file or directory, scandir '/home/z/my-project/app'
+    at ignore-listed frames {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'scandir',
+  path: '/home/z/my-project/app'
+}
+⨯ unhandledRejection: Error: ENOENT: no such file or directory, scandir '/home/z/my-project/app'
+    at ignore-listed frames {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'scandir',
+  path: '/home/z/my-project/app'
+}
+⨯ unhandledRejection:  Error: ENOENT: no such file or directory, scandir '/home/z/my-project/app'
+    at ignore-listed frames {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'scandir',
+  path: '/home/z/my-project/app'
+}
+Error: ENOENT: no such file or directory, scandir '/home/z/my-project/app'
+    at ignore-listed frames {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'scandir',
+  path: '/home/z/my-project/app'
+}
+Error: ENOENT: no such file or directory, scandir '/home/z/my-project/app'
+    at ignore-listed frames {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'scandir',
+  path: '/home/z/my-project/app'
+}
+Error: ENOENT: no such file or directory, scandir '/home/z/my-project/app'
+    at ignore-listed frames {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'scandir',
+  path: '/home/z/my-project/app'
+}
+Error: ENOENT: no such file or directory, scandir '/home/z/my-project/app'
+    at ignore-listed frames {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'scandir',
+  path: '/home/z/my-project/app'
+}
+Error: ENOENT: no such file or directory, scandir '/home/z/my-project/app'
+    at ignore-listed frames {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'scandir',
+  path: '/home/z/my-project/app'
+}
+Error: ENOENT: no such file or directory, scandir '/home/z/my-project/app'
+    at ignore-listed frames {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'scandir',
+  path: '/home/z/my-project/app'
+}
+Error: ENOENT: no such file or directory, scandir '/home/z/my-project/app'
+    at ignore-listed frames {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'scandir',
+  path: '/home/z/my-project/app'
+}
+Error: ENOENT: no such file or directory, scandir '/home/z/my-project/app'
+    at ignore-listed frames {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'scandir',
+  path: '/home/z/my-project/app'
+}
+⨯ ./src/app/page.tsx:8:1
+Module not found: Can't resolve '@/components/anime-grid'
+[0m [90m  6 |[39m [36mimport[39m { [33mSearchBar[39m } [36mfrom[39m [32m'@/components/search-bar'[39m
+ [90m  7 |[39m [36mimport[39m { [33mSectionTitle[39m } [36mfrom[39m [32m'@/components/section-title'[39m
+[31m[1m>[22m[39m[90m  8 |[39m [36mimport[39m { [33mAnimeGrid[39m } [36mfrom[39m [32m'@/components/anime-grid'[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m  9 |[39m [36mimport[39m { [33mScheduleSection[39m } [36mfrom[39m [32m'@/components/schedule-section'[39m
+ [90m 10 |[39m [36mimport[39m { [33mSpinner[39m } [36mfrom[39m [32m'@/components/ui/spinner'[39m
+ [90m 11 |[39m[0m
+
+Import map: aliased to relative './components/anime-grid' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/app/page.tsx:8:1
+Module not found: Can't resolve '@/components/anime-grid'
+[0m [90m  6 |[39m [36mimport[39m { [33mSearchBar[39m } [36mfrom[39m [32m'@/components/search-bar'[39m
+ [90m  7 |[39m [36mimport[39m { [33mSectionTitle[39m } [36mfrom[39m [32m'@/components/section-title'[39m
+[31m[1m>[22m[39m[90m  8 |[39m [36mimport[39m { [33mAnimeGrid[39m } [36mfrom[39m [32m'@/components/anime-grid'[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m  9 |[39m [36mimport[39m { [33mScheduleSection[39m } [36mfrom[39m [32m'@/components/schedule-section'[39m
+ [90m 10 |[39m [36mimport[39m { [33mSpinner[39m } [36mfrom[39m [32m'@/components/ui/spinner'[39m
+ [90m 11 |[39m[0m
+
+Import map: aliased to relative './components/anime-grid' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/app/page.tsx:4:1
+Module not found: Can't resolve '@/components/bottom-nav'
+[0m [90m 2 |[39m [36mimport[39m { getHome[33m,[39m getSchedule } [36mfrom[39m [32m'@/lib/api'[39m
+ [90m 3 |[39m [36mimport[39m { [33mHeader[39m } [36mfrom[39m [32m'@/components/header'[39m
+[31m[1m>[22m[39m[90m 4 |[39m [36mimport[39m { [33mBottomNav[39m } [36mfrom[39m [32m'@/components/bottom-nav'[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 5 |[39m [36mimport[39m { [33mHeroCarousel[39m } [36mfrom[39m [32m'@/components/hero-carousel'[39m
+ [90m 6 |[39m [36mimport[39m { [33mSearchBar[39m } [36mfrom[39m [32m'@/components/search-bar'[39m
+ [90m 7 |[39m [36mimport[39m { [33mSectionTitle[39m } [36mfrom[39m [32m'@/components/section-title'[39m[0m
+
+Import map: aliased to relative './components/bottom-nav' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/app/page.tsx:4:1
+Module not found: Can't resolve '@/components/bottom-nav'
+[0m [90m 2 |[39m [36mimport[39m { getHome[33m,[39m getSchedule } [36mfrom[39m [32m'@/lib/api'[39m
+ [90m 3 |[39m [36mimport[39m { [33mHeader[39m } [36mfrom[39m [32m'@/components/header'[39m
+[31m[1m>[22m[39m[90m 4 |[39m [36mimport[39m { [33mBottomNav[39m } [36mfrom[39m [32m'@/components/bottom-nav'[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 5 |[39m [36mimport[39m { [33mHeroCarousel[39m } [36mfrom[39m [32m'@/components/hero-carousel'[39m
+ [90m 6 |[39m [36mimport[39m { [33mSearchBar[39m } [36mfrom[39m [32m'@/components/search-bar'[39m
+ [90m 7 |[39m [36mimport[39m { [33mSectionTitle[39m } [36mfrom[39m [32m'@/components/section-title'[39m[0m
+
+Import map: aliased to relative './components/bottom-nav' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/app/page.tsx:3:1
+Module not found: Can't resolve '@/components/header'
+[0m [90m 1 |[39m [36mimport[39m { [33mSuspense[39m } [36mfrom[39m [32m'react'[39m
+ [90m 2 |[39m [36mimport[39m { getHome[33m,[39m getSchedule } [36mfrom[39m [32m'@/lib/api'[39m
+[31m[1m>[22m[39m[90m 3 |[39m [36mimport[39m { [33mHeader[39m } [36mfrom[39m [32m'@/components/header'[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 4 |[39m [36mimport[39m { [33mBottomNav[39m } [36mfrom[39m [32m'@/components/bottom-nav'[39m
+ [90m 5 |[39m [36mimport[39m { [33mHeroCarousel[39m } [36mfrom[39m [32m'@/components/hero-carousel'[39m
+ [90m 6 |[39m [36mimport[39m { [33mSearchBar[39m } [36mfrom[39m [32m'@/components/search-bar'[39m[0m
+
+Import map: aliased to relative './components/header' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/app/page.tsx:3:1
+Module not found: Can't resolve '@/components/header'
+[0m [90m 1 |[39m [36mimport[39m { [33mSuspense[39m } [36mfrom[39m [32m'react'[39m
+ [90m 2 |[39m [36mimport[39m { getHome[33m,[39m getSchedule } [36mfrom[39m [32m'@/lib/api'[39m
+[31m[1m>[22m[39m[90m 3 |[39m [36mimport[39m { [33mHeader[39m } [36mfrom[39m [32m'@/components/header'[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 4 |[39m [36mimport[39m { [33mBottomNav[39m } [36mfrom[39m [32m'@/components/bottom-nav'[39m
+ [90m 5 |[39m [36mimport[39m { [33mHeroCarousel[39m } [36mfrom[39m [32m'@/components/hero-carousel'[39m
+ [90m 6 |[39m [36mimport[39m { [33mSearchBar[39m } [36mfrom[39m [32m'@/components/search-bar'[39m[0m
+
+Import map: aliased to relative './components/header' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/app/page.tsx:5:1
+Module not found: Can't resolve '@/components/hero-carousel'
+[0m [90m 3 |[39m [36mimport[39m { [33mHeader[39m } [36mfrom[39m [32m'@/components/header'[39m
+ [90m 4 |[39m [36mimport[39m { [33mBottomNav[39m } [36mfrom[39m [32m'@/components/bottom-nav'[39m
+[31m[1m>[22m[39m[90m 5 |[39m [36mimport[39m { [33mHeroCarousel[39m } [36mfrom[39m [32m'@/components/hero-carousel'[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 6 |[39m [36mimport[39m { [33mSearchBar[39m } [36mfrom[39m [32m'@/components/search-bar'[39m
+ [90m 7 |[39m [36mimport[39m { [33mSectionTitle[39m } [36mfrom[39m [32m'@/components/section-title'[39m
+ [90m 8 |[39m [36mimport[39m { [33mAnimeGrid[39m } [36mfrom[39m [32m'@/components/anime-grid'[39m[0m
+
+Import map: aliased to relative './components/hero-carousel' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/app/page.tsx:5:1
+Module not found: Can't resolve '@/components/hero-carousel'
+[0m [90m 3 |[39m [36mimport[39m { [33mHeader[39m } [36mfrom[39m [32m'@/components/header'[39m
+ [90m 4 |[39m [36mimport[39m { [33mBottomNav[39m } [36mfrom[39m [32m'@/components/bottom-nav'[39m
+[31m[1m>[22m[39m[90m 5 |[39m [36mimport[39m { [33mHeroCarousel[39m } [36mfrom[39m [32m'@/components/hero-carousel'[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 6 |[39m [36mimport[39m { [33mSearchBar[39m } [36mfrom[39m [32m'@/components/search-bar'[39m
+ [90m 7 |[39m [36mimport[39m { [33mSectionTitle[39m } [36mfrom[39m [32m'@/components/section-title'[39m
+ [90m 8 |[39m [36mimport[39m { [33mAnimeGrid[39m } [36mfrom[39m [32m'@/components/anime-grid'[39m[0m
+
+Import map: aliased to relative './components/hero-carousel' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/app/page.tsx:9:1
+Module not found: Can't resolve '@/components/schedule-section'
+[0m [90m  7 |[39m [36mimport[39m { [33mSectionTitle[39m } [36mfrom[39m [32m'@/components/section-title'[39m
+ [90m  8 |[39m [36mimport[39m { [33mAnimeGrid[39m } [36mfrom[39m [32m'@/components/anime-grid'[39m
+[31m[1m>[22m[39m[90m  9 |[39m [36mimport[39m { [33mScheduleSection[39m } [36mfrom[39m [32m'@/components/schedule-section'[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 10 |[39m [36mimport[39m { [33mSpinner[39m } [36mfrom[39m [32m'@/components/ui/spinner'[39m
+ [90m 11 |[39m
+ [90m 12 |[39m [36masync[39m [36mfunction[39m [33mHomeContent[39m() {[0m
+
+Import map: aliased to relative './components/schedule-section' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/app/page.tsx:9:1
+Module not found: Can't resolve '@/components/schedule-section'
+[0m [90m  7 |[39m [36mimport[39m { [33mSectionTitle[39m } [36mfrom[39m [32m'@/components/section-title'[39m
+ [90m  8 |[39m [36mimport[39m { [33mAnimeGrid[39m } [36mfrom[39m [32m'@/components/anime-grid'[39m
+[31m[1m>[22m[39m[90m  9 |[39m [36mimport[39m { [33mScheduleSection[39m } [36mfrom[39m [32m'@/components/schedule-section'[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 10 |[39m [36mimport[39m { [33mSpinner[39m } [36mfrom[39m [32m'@/components/ui/spinner'[39m
+ [90m 11 |[39m
+ [90m 12 |[39m [36masync[39m [36mfunction[39m [33mHomeContent[39m() {[0m
+
+Import map: aliased to relative './components/schedule-section' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/app/page.tsx:6:1
+Module not found: Can't resolve '@/components/search-bar'
+[0m [90m 4 |[39m [36mimport[39m { [33mBottomNav[39m } [36mfrom[39m [32m'@/components/bottom-nav'[39m
+ [90m 5 |[39m [36mimport[39m { [33mHeroCarousel[39m } [36mfrom[39m [32m'@/components/hero-carousel'[39m
+[31m[1m>[22m[39m[90m 6 |[39m [36mimport[39m { [33mSearchBar[39m } [36mfrom[39m [32m'@/components/search-bar'[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 7 |[39m [36mimport[39m { [33mSectionTitle[39m } [36mfrom[39m [32m'@/components/section-title'[39m
+ [90m 8 |[39m [36mimport[39m { [33mAnimeGrid[39m } [36mfrom[39m [32m'@/components/anime-grid'[39m
+ [90m 9 |[39m [36mimport[39m { [33mScheduleSection[39m } [36mfrom[39m [32m'@/components/schedule-section'[39m[0m
+
+Import map: aliased to relative './components/search-bar' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/app/page.tsx:6:1
+Module not found: Can't resolve '@/components/search-bar'
+[0m [90m 4 |[39m [36mimport[39m { [33mBottomNav[39m } [36mfrom[39m [32m'@/components/bottom-nav'[39m
+ [90m 5 |[39m [36mimport[39m { [33mHeroCarousel[39m } [36mfrom[39m [32m'@/components/hero-carousel'[39m
+[31m[1m>[22m[39m[90m 6 |[39m [36mimport[39m { [33mSearchBar[39m } [36mfrom[39m [32m'@/components/search-bar'[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 7 |[39m [36mimport[39m { [33mSectionTitle[39m } [36mfrom[39m [32m'@/components/section-title'[39m
+ [90m 8 |[39m [36mimport[39m { [33mAnimeGrid[39m } [36mfrom[39m [32m'@/components/anime-grid'[39m
+ [90m 9 |[39m [36mimport[39m { [33mScheduleSection[39m } [36mfrom[39m [32m'@/components/schedule-section'[39m[0m
+
+Import map: aliased to relative './components/search-bar' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/app/page.tsx:7:1
+Module not found: Can't resolve '@/components/section-title'
+[0m [90m  5 |[39m [36mimport[39m { [33mHeroCarousel[39m } [36mfrom[39m [32m'@/components/hero-carousel'[39m
+ [90m  6 |[39m [36mimport[39m { [33mSearchBar[39m } [36mfrom[39m [32m'@/components/search-bar'[39m
+[31m[1m>[22m[39m[90m  7 |[39m [36mimport[39m { [33mSectionTitle[39m } [36mfrom[39m [32m'@/components/section-title'[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m  8 |[39m [36mimport[39m { [33mAnimeGrid[39m } [36mfrom[39m [32m'@/components/anime-grid'[39m
+ [90m  9 |[39m [36mimport[39m { [33mScheduleSection[39m } [36mfrom[39m [32m'@/components/schedule-section'[39m
+ [90m 10 |[39m [36mimport[39m { [33mSpinner[39m } [36mfrom[39m [32m'@/components/ui/spinner'[39m[0m
+
+Import map: aliased to relative './components/section-title' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/app/page.tsx:7:1
+Module not found: Can't resolve '@/components/section-title'
+[0m [90m  5 |[39m [36mimport[39m { [33mHeroCarousel[39m } [36mfrom[39m [32m'@/components/hero-carousel'[39m
+ [90m  6 |[39m [36mimport[39m { [33mSearchBar[39m } [36mfrom[39m [32m'@/components/search-bar'[39m
+[31m[1m>[22m[39m[90m  7 |[39m [36mimport[39m { [33mSectionTitle[39m } [36mfrom[39m [32m'@/components/section-title'[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m  8 |[39m [36mimport[39m { [33mAnimeGrid[39m } [36mfrom[39m [32m'@/components/anime-grid'[39m
+ [90m  9 |[39m [36mimport[39m { [33mScheduleSection[39m } [36mfrom[39m [32m'@/components/schedule-section'[39m
+ [90m 10 |[39m [36mimport[39m { [33mSpinner[39m } [36mfrom[39m [32m'@/components/ui/spinner'[39m[0m
+
+Import map: aliased to relative './components/section-title' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/app/page.tsx:10:1
+Module not found: Can't resolve '@/components/ui/spinner'
+[0m [90m  8 |[39m [36mimport[39m { [33mAnimeGrid[39m } [36mfrom[39m [32m'@/components/anime-grid'[39m
+ [90m  9 |[39m [36mimport[39m { [33mScheduleSection[39m } [36mfrom[39m [32m'@/components/schedule-section'[39m
+[31m[1m>[22m[39m[90m 10 |[39m [36mimport[39m { [33mSpinner[39m } [36mfrom[39m [32m'@/components/ui/spinner'[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 11 |[39m
+ [90m 12 |[39m [36masync[39m [36mfunction[39m [33mHomeContent[39m() {
+ [90m 13 |[39m   [36mconst[39m [homeData[33m,[39m scheduleData] [33m=[39m [36mawait[39m [33mPromise[39m[33m.[39mall([[0m
+
+Import map: aliased to relative './components/ui/spinner' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/app/page.tsx:10:1
+Module not found: Can't resolve '@/components/ui/spinner'
+[0m [90m  8 |[39m [36mimport[39m { [33mAnimeGrid[39m } [36mfrom[39m [32m'@/components/anime-grid'[39m
+ [90m  9 |[39m [36mimport[39m { [33mScheduleSection[39m } [36mfrom[39m [32m'@/components/schedule-section'[39m
+[31m[1m>[22m[39m[90m 10 |[39m [36mimport[39m { [33mSpinner[39m } [36mfrom[39m [32m'@/components/ui/spinner'[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 11 |[39m
+ [90m 12 |[39m [36masync[39m [36mfunction[39m [33mHomeContent[39m() {
+ [90m 13 |[39m   [36mconst[39m [homeData[33m,[39m scheduleData] [33m=[39m [36mawait[39m [33mPromise[39m[33m.[39mall([[0m
+
+Import map: aliased to relative './components/ui/spinner' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/app/layout.tsx:4:1
+Module not found: Can't resolve '@/components/ui/toaster'
+[0m [90m 2 |[39m [36mimport[39m { [33mGeist[39m[33m,[39m [33mGeist_Mono[39m } [36mfrom[39m [32m'next/font/google'[39m
+ [90m 3 |[39m [36mimport[39m { [33mAuthProvider[39m } [36mfrom[39m [32m'@/contexts/auth-context'[39m
+[31m[1m>[22m[39m[90m 4 |[39m [36mimport[39m { [33mToaster[39m } [36mfrom[39m [32m'@/components/ui/toaster'[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 5 |[39m [36mimport[39m [32m'./globals.css'[39m
+ [90m 6 |[39m
+ [90m 7 |[39m [36mconst[39m geistSans [33m=[39m [33mGeist[39m({ [0m
+
+Import map: aliased to relative './components/ui/toaster' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/app/layout.tsx:4:1
+Module not found: Can't resolve '@/components/ui/toaster'
+[0m [90m 2 |[39m [36mimport[39m { [33mGeist[39m[33m,[39m [33mGeist_Mono[39m } [36mfrom[39m [32m'next/font/google'[39m
+ [90m 3 |[39m [36mimport[39m { [33mAuthProvider[39m } [36mfrom[39m [32m'@/contexts/auth-context'[39m
+[31m[1m>[22m[39m[90m 4 |[39m [36mimport[39m { [33mToaster[39m } [36mfrom[39m [32m'@/components/ui/toaster'[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 5 |[39m [36mimport[39m [32m'./globals.css'[39m
+ [90m 6 |[39m
+ [90m 7 |[39m [36mconst[39m geistSans [33m=[39m [33mGeist[39m({ [0m
+
+Import map: aliased to relative './components/ui/toaster' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/app/layout.tsx:3:1
+Module not found: Can't resolve '@/contexts/auth-context'
+[0m [90m 1 |[39m [36mimport[39m type { [33mMetadata[39m[33m,[39m [33mViewport[39m } [36mfrom[39m [32m'next'[39m
+ [90m 2 |[39m [36mimport[39m { [33mGeist[39m[33m,[39m [33mGeist_Mono[39m } [36mfrom[39m [32m'next/font/google'[39m
+[31m[1m>[22m[39m[90m 3 |[39m [36mimport[39m { [33mAuthProvider[39m } [36mfrom[39m [32m'@/contexts/auth-context'[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 4 |[39m [36mimport[39m { [33mToaster[39m } [36mfrom[39m [32m'@/components/ui/toaster'[39m
+ [90m 5 |[39m [36mimport[39m [32m'./globals.css'[39m
+ [90m 6 |[39m[0m
+
+Import map: aliased to relative './contexts/auth-context' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/app/layout.tsx:3:1
+Module not found: Can't resolve '@/contexts/auth-context'
+[0m [90m 1 |[39m [36mimport[39m type { [33mMetadata[39m[33m,[39m [33mViewport[39m } [36mfrom[39m [32m'next'[39m
+ [90m 2 |[39m [36mimport[39m { [33mGeist[39m[33m,[39m [33mGeist_Mono[39m } [36mfrom[39m [32m'next/font/google'[39m
+[31m[1m>[22m[39m[90m 3 |[39m [36mimport[39m { [33mAuthProvider[39m } [36mfrom[39m [32m'@/contexts/auth-context'[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 4 |[39m [36mimport[39m { [33mToaster[39m } [36mfrom[39m [32m'@/components/ui/toaster'[39m
+ [90m 5 |[39m [36mimport[39m [32m'./globals.css'[39m
+ [90m 6 |[39m[0m
+
+Import map: aliased to relative './contexts/auth-context' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/app/page.tsx:2:1
+Module not found: Can't resolve '@/lib/api'
+[0m [90m 1 |[39m [36mimport[39m { [33mSuspense[39m } [36mfrom[39m [32m'react'[39m
+[31m[1m>[22m[39m[90m 2 |[39m [36mimport[39m { getHome[33m,[39m getSchedule } [36mfrom[39m [32m'@/lib/api'[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 3 |[39m [36mimport[39m { [33mHeader[39m } [36mfrom[39m [32m'@/components/header'[39m
+ [90m 4 |[39m [36mimport[39m { [33mBottomNav[39m } [36mfrom[39m [32m'@/components/bottom-nav'[39m
+ [90m 5 |[39m [36mimport[39m { [33mHeroCarousel[39m } [36mfrom[39m [32m'@/components/hero-carousel'[39m[0m
+
+Import map: aliased to relative './lib/api' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/app/page.tsx:2:1
+Module not found: Can't resolve '@/lib/api'
+[0m [90m 1 |[39m [36mimport[39m { [33mSuspense[39m } [36mfrom[39m [32m'react'[39m
+[31m[1m>[22m[39m[90m 2 |[39m [36mimport[39m { getHome[33m,[39m getSchedule } [36mfrom[39m [32m'@/lib/api'[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 3 |[39m [36mimport[39m { [33mHeader[39m } [36mfrom[39m [32m'@/components/header'[39m
+ [90m 4 |[39m [36mimport[39m { [33mBottomNav[39m } [36mfrom[39m [32m'@/components/bottom-nav'[39m
+ [90m 5 |[39m [36mimport[39m { [33mHeroCarousel[39m } [36mfrom[39m [32m'@/components/hero-carousel'[39m[0m
+
+Import map: aliased to relative './lib/api' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/app/page.tsx:2:1
+Module not found: Can't resolve '@/lib/api'
+[0m [90m 1 |[39m [36mimport[39m { [33mSuspense[39m } [36mfrom[39m [32m'react'[39m
+[31m[1m>[22m[39m[90m 2 |[39m [36mimport[39m { getHome[33m,[39m getSchedule } [36mfrom[39m [32m'@/lib/api'[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 3 |[39m [36mimport[39m { [33mHeader[39m } [36mfrom[39m [32m'@/components/header'[39m
+ [90m 4 |[39m [36mimport[39m { [33mBottomNav[39m } [36mfrom[39m [32m'@/components/bottom-nav'[39m
+ [90m 5 |[39m [36mimport[39m { [33mHeroCarousel[39m } [36mfrom[39m [32m'@/components/hero-carousel'[39m[0m
+
+Import map: aliased to relative './lib/api' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+✓ Compiled in 1180ms
+✓ Compiled in 671ms
+Persisting failed: Unable to write SST file 00000162.sst
+
+Caused by:
+    No such file or directory (os error 2)
+Persisting failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+Error: ENOENT: no such file or directory, scandir '/home/z/my-project/app'
+    at ignore-listed frames {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'scandir',
+  path: '/home/z/my-project/app'
+}
+Error: ENOENT: no such file or directory, scandir '/home/z/my-project/app'
+    at ignore-listed frames {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'scandir',
+  path: '/home/z/my-project/app'
+}
+Persisting failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+Persisting failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+Persisting failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+Persisting failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+⚠ Found a change in next.config.mjs. Restarting the server to apply the changes...
+▲ Next.js 16.1.6 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://21.0.5.20:3000
+- Environments: .env
+
+✓ Starting...
+Attention: Next.js now collects completely anonymous telemetry regarding usage.
+This information is used to shape Next.js' roadmap and prioritize features.
+You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+https://nextjs.org/telemetry
+
+✓ Ready in 641ms
+○ Compiling / ...
+ GET / 200 in 3.9s (compile: 3.4s, render: 484ms)
+ GET / 200 in 111ms (compile: 4ms, render: 107ms)
+ GET /schedule 200 in 751ms (compile: 482ms, render: 269ms)
+ GET /more 200 in 486ms (compile: 409ms, render: 78ms)
+ GET /privacy 200 in 434ms (compile: 367ms, render: 66ms)
+ GET /more 200 in 18ms (compile: 3ms, render: 15ms)
+⚠ Cross origin request detected from preview-chat-50110f9a-4a88-4272-b88f-d55cfb721a67.space.z.ai to /_next/* resource. In a future major version of Next.js, you will need to explicitly configure "allowedDevOrigins" in next.config to allow this.
+Read more: https://nextjs.org/docs/app/api-reference/config/next-config-js/allowedDevOrigins
+ GET /about 200 in 327ms (compile: 310ms, render: 16ms)
+ GET /favorites 200 in 340ms (compile: 323ms, render: 17ms)
+ GET /chat 200 in 400ms (compile: 386ms, render: 14ms)
+ GET /nobar 200 in 306ms (compile: 292ms, render: 14ms)
+ GET /history 200 in 304ms (compile: 275ms, render: 29ms)
+ GET /chat 200 in 13ms (compile: 2ms, render: 11ms)
+⨯ Error: API Error: 500
+    at fetchApi (src/lib/api.ts:19:11)
+    at async getGenres (src/lib/api.ts:46:20)
+    at async GenreContent (src/app/genre/page.tsx:89:21)
+  17 |   
+  18 |   if (!res.ok) {
+> 19 |     throw new Error(`API Error: ${res.status}`)
+     |           ^
+  20 |   }
+  21 |   
+  22 |   return res.json() {
+  digest: '3991075636'
+}
+ GET /genre 200 in 6.1s (compile: 323ms, render: 5.8s)
+ GET / 200 in 98ms (compile: 3ms, render: 95ms)
+ GET /completed 200 in 1041ms (compile: 300ms, render: 741ms)
+ GET /completed?page=65 200 in 534ms (compile: 2ms, render: 532ms)
+ GET / 200 in 77ms (compile: 2ms, render: 75ms)
+ GET / 200 in 77ms (compile: 2ms, render: 74ms)
+ GET / 200 in 85ms (compile: 2ms, render: 83ms)
+ GET / 200 in 92ms (compile: 1986µs, render: 90ms)
+ GET /auth 200 in 346ms (compile: 285ms, render: 61ms)
+ GET / 200 in 38ms (compile: 3ms, render: 36ms)
+✓ Compiled in 185ms
+ GET / 200 in 193ms (compile: 65ms, render: 128ms)
+ GET / 200 in 59ms (compile: 1749µs, render: 57ms)
+ GET / 200 in 38ms (compile: 1742µs, render: 36ms)
+ GET / 200 in 37ms (compile: 2ms, render: 35ms)
+ GET /genre 200 in 671ms (compile: 54ms, render: 617ms)
+ GET /genre/shoujo 200 in 1692ms (compile: 832ms, render: 860ms)
+ GET /genre/shoujo?page=5 200 in 924ms (compile: 63ms, render: 861ms)
+ GET /genre/shoujo?page=4 200 in 828ms (compile: 43ms, render: 785ms)
+ GET /anime/donten-warau-sub-indo 200 in 1653ms (compile: 1073ms, render: 580ms)
+✓ Compiled in 180ms
+ GET /anime/donten-warau-sub-indo 200 in 139ms (compile: 70ms, render: 70ms)
+ GET /watch/dtnwru-episode-1-sub-indo 200 in 4.1s (compile: 1140ms, render: 3.0s)
+ GET /watch/dtnwru-episode-12-sub-indo 200 in 685ms (compile: 53ms, render: 632ms)
+ GET / 200 in 35ms (compile: 4ms, render: 32ms)
+✓ Compiled in 136ms
+ GET / 200 in 141ms (compile: 77ms, render: 64ms)
+ GET /anime/mato-seihei-slave-s2-sub-indo 200 in 441ms (compile: 53ms, render: 388ms)
+ GET /watch/msns-s2-episode-1-sub-indo 200 in 489ms (compile: 46ms, render: 443ms)
+ GET /more 200 in 25ms (compile: 5ms, render: 20ms)
+ GET /history 200 in 18ms (compile: 3ms, render: 15ms)
+ GET / 200 in 294ms (compile: 2ms, render: 292ms)
+ GET / 200 in 101ms (compile: 3ms, render: 98ms)
+✓ Compiled in 159ms
+⚠ Fast Refresh had to perform a full reload when ./src/lib/firebase.ts changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ GET / 200 in 319ms (compile: 68ms, render: 251ms)
+ GET / 200 in 275ms (compile: 70ms, render: 205ms)
+ GET /favorites 200 in 279ms (compile: 69ms, render: 210ms)
+ GET / 200 in 328ms (compile: 78ms, render: 250ms)
+ GET /auth 200 in 82ms (compile: 60ms, render: 22ms)
+✓ Compiled in 190ms
+✓ Compiled in 141ms
+✓ Compiled in 120ms
+✓ Compiled in 218ms
+ GET / 200 in 364ms (compile: 84ms, render: 281ms)
+ GET /schedule 200 in 209ms (compile: 99ms, render: 110ms)
+ GET /more 200 in 91ms (compile: 64ms, render: 27ms)
+ GET /about 200 in 78ms (compile: 58ms, render: 21ms)
+ GET /favorites 200 in 31ms (compile: 8ms, render: 23ms)
+ GET / 200 in 97ms (compile: 2ms, render: 95ms)
+ GET / 200 in 83ms (compile: 3ms, render: 80ms)
+ GET / 200 in 359ms (compile: 66ms, render: 293ms)
+ GET /more 200 in 130ms (compile: 100ms, render: 31ms)
+ GET /tos 200 in 393ms (compile: 376ms, render: 17ms)
+ GET / 200 in 96ms (compile: 3ms, render: 92ms)
+ GET /more 200 in 12ms (compile: 2ms, render: 10ms)
+ GET /dmca 200 in 293ms (compile: 279ms, render: 13ms)
+ GET / 200 in 51ms (compile: 3ms, render: 48ms)
+ GET /auth 200 in 27ms (compile: 15ms, render: 12ms)
+ GET / 200 in 136ms (compile: 3ms, render: 133ms)
+ GET / 200 in 91ms (compile: 1982µs, render: 89ms)
+ GET /auth 200 in 13ms (compile: 2ms, render: 11ms)
+ GET /profile 200 in 506ms (compile: 491ms, render: 15ms)
+ GET / 200 in 32ms (compile: 1913µs, render: 30ms)
+ GET / 200 in 69ms (compile: 2ms, render: 67ms)
+✓ Compiled in 157ms
+⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ GET / 200 in 312ms (compile: 58ms, render: 254ms)
+✓ Compiled in 243ms
+ GET / 200 in 105ms (compile: 4ms, render: 101ms)
+ GET / 200 in 81ms (compile: 2ms, render: 79ms)
+ GET / 200 in 88ms (compile: 2ms, render: 86ms)
+ GET /profile 200 in 21ms (compile: 8ms, render: 12ms)
+ GET /settings 404 in 297ms (compile: 280ms, render: 17ms)
+ GET /settings 404 in 20ms (compile: 5ms, render: 15ms)
+ GET /settings 404 in 73ms (compile: 5ms, render: 67ms)
+ GET / 200 in 97ms (compile: 5ms, render: 92ms)
+ GET /profile 200 in 12ms (compile: 2ms, render: 10ms)
+ GET / 200 in 76ms (compile: 1906µs, render: 74ms)
+✓ Compiled in 145ms
+⚠ Fast Refresh had to perform a full reload when ./src/lib/firebase.ts changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ GET / 200 in 322ms (compile: 74ms, render: 249ms)
+ GET / 200 in 414ms (compile: 121ms, render: 293ms)
+ GET /anime/champignon-majo-sub-indo 200 in 1109ms (compile: 182ms, render: 927ms)
+ GET /chat 200 in 231ms (compile: 121ms, render: 110ms)
+ GET / 200 in 102ms (compile: 2ms, render: 99ms)
+ GET /chat 200 in 196ms (compile: 2ms, render: 193ms)
+ GET / 200 in 114ms (compile: 7ms, render: 108ms)
+ GET /more 200 in 251ms (compile: 64ms, render: 187ms)
+ GET /nobar 200 in 88ms (compile: 65ms, render: 23ms)
+ GET /favorites 200 in 111ms (compile: 88ms, render: 24ms)
+ GET /profile 200 in 108ms (compile: 85ms, render: 22ms)
+ GET /settings 404 in 127ms (compile: 68ms, render: 59ms)
+ GET /settings 404 in 121ms (compile: 8ms, render: 113ms)
+ GET /profile 200 in 122ms (compile: 3ms, render: 119ms)
+ GET /auth 200 in 95ms (compile: 67ms, render: 28ms)
+ GET /auth 200 in 22ms (compile: 3ms, render: 19ms)
+ GET /profile 200 in 18ms (compile: 2ms, render: 16ms)
+ GET / 200 in 46ms (compile: 4ms, render: 43ms)
+ GET / 200 in 112ms (compile: 2ms, render: 109ms)
+ GET /profile 200 in 19ms (compile: 3ms, render: 16ms)
+ GET / 200 in 92ms (compile: 5ms, render: 87ms)
+ GET /auth 200 in 17ms (compile: 2ms, render: 15ms)
+ GET /profile 200 in 21ms (compile: 3ms, render: 18ms)
+ GET / 200 in 87ms (compile: 2ms, render: 84ms)
+✓ Compiled in 137ms
+⨯ ./src/contexts/auth-context.tsx:5:1
+Export onValue doesn't exist in target module
+[0m [90m  3 |[39m [36mimport[39m { createContext[33m,[39m useContext[33m,[39m useEffect[33m,[39m useState[33m,[39m type [33mReactNode[39m } [36mfrom[39m [32m'react'[39m
+ [90m  4 |[39m [36mimport[39m { type [33mUser[39m } [36mfrom[39m [32m'firebase/auth'[39m
+[31m[1m>[22m[39m[90m  5 |[39m [36mimport[39m { 
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m  6 |[39m   onAuthChange[33m,[39m 
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m  7 |[39m   getUserProfile[33m,[39m 
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m  8 |[39m   saveUserProfile[33m,[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m  9 |[39m   ref[33m,[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m 10 |[39m   onValue[33m,[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m 11 |[39m   database[33m,[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m 12 |[39m   type [33mUserProfile[39m 
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m 13 |[39m } [36mfrom[39m [32m'@/lib/firebase'[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 14 |[39m
+ [90m 15 |[39m [90m// Admin email - will automatically get admin role[39m
+ [90m 16 |[39m [36mconst[39m [33mADMIN_EMAIL[39m [33m=[39m [32m'ryu694602@gmail.com'[39m[0m
+
+The export onValue was not found in module [project]/src/lib/firebase.ts [app-client] (ecmascript).
+Did you mean to import onAuthChange?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Server Component:
+    ./src/contexts/auth-context.tsx
+    ./src/app/layout.tsx
+
+  Client Component Browser:
+    ./src/contexts/auth-context.tsx [Client Component Browser]
+    ./src/components/header.tsx [Client Component Browser]
+    ./src/components/header.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/contexts/auth-context.tsx [Client Component SSR]
+    ./src/components/header.tsx [Client Component SSR]
+    ./src/components/header.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+
+
+./src/contexts/auth-context.tsx:5:1
+Export onValue doesn't exist in target module
+[0m [90m  3 |[39m [36mimport[39m { createContext[33m,[39m useContext[33m,[39m useEffect[33m,[39m useState[33m,[39m type [33mReactNode[39m } [36mfrom[39m [32m'react'[39m
+ [90m  4 |[39m [36mimport[39m { type [33mUser[39m } [36mfrom[39m [32m'firebase/auth'[39m
+[31m[1m>[22m[39m[90m  5 |[39m [36mimport[39m { 
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m  6 |[39m   onAuthChange[33m,[39m 
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m  7 |[39m   getUserProfile[33m,[39m 
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m  8 |[39m   saveUserProfile[33m,[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m  9 |[39m   ref[33m,[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m 10 |[39m   onValue[33m,[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m 11 |[39m   database[33m,[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m 12 |[39m   type [33mUserProfile[39m 
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m 13 |[39m } [36mfrom[39m [32m'@/lib/firebase'[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 14 |[39m
+ [90m 15 |[39m [90m// Admin email - will automatically get admin role[39m
+ [90m 16 |[39m [36mconst[39m [33mADMIN_EMAIL[39m [33m=[39m [32m'ryu694602@gmail.com'[39m[0m
+
+The export onValue was not found in module [project]/src/lib/firebase.ts [app-ssr] (ecmascript).
+Did you mean to import onAuthChange?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Server Component:
+    ./src/contexts/auth-context.tsx
+    ./src/app/layout.tsx
+
+  Client Component Browser:
+    ./src/contexts/auth-context.tsx [Client Component Browser]
+    ./src/components/header.tsx [Client Component Browser]
+    ./src/components/header.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/contexts/auth-context.tsx [Client Component SSR]
+    ./src/components/header.tsx [Client Component SSR]
+    ./src/components/header.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+
+
+./src/contexts/auth-context.tsx:5:1
+Export ref doesn't exist in target module
+[0m [90m  3 |[39m [36mimport[39m { createContext[33m,[39m useContext[33m,[39m useEffect[33m,[39m useState[33m,[39m type [33mReactNode[39m } [36mfrom[39m [32m'react'[39m
+ [90m  4 |[39m [36mimport[39m { type [33mUser[39m } [36mfrom[39m [32m'firebase/auth'[39m
+[31m[1m>[22m[39m[90m  5 |[39m [36mimport[39m { 
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m  6 |[39m   onAuthChange[33m,[39m 
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m  7 |[39m   getUserProfile[33m,[39m 
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m  8 |[39m   saveUserProfile[33m,[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m  9 |[39m   ref[33m,[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m 10 |[39m   onValue[33m,[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m 11 |[39m   database[33m,[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m 12 |[39m   type [33mUserProfile[39m 
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m 13 |[39m } [36mfrom[39m [32m'@/lib/firebase'[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 14 |[39m
+ [90m 15 |[39m [90m// Admin email - will automatically get admin role[39m
+ [90m 16 |[39m [36mconst[39m [33mADMIN_EMAIL[39m [33m=[39m [32m'ryu694602@gmail.com'[39m[0m
+
+The export ref was not found in module [project]/src/lib/firebase.ts [app-client] (ecmascript).
+Did you mean to import removeFavorite?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Server Component:
+    ./src/contexts/auth-context.tsx
+    ./src/app/layout.tsx
+
+  Client Component Browser:
+    ./src/contexts/auth-context.tsx [Client Component Browser]
+    ./src/components/header.tsx [Client Component Browser]
+    ./src/components/header.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/contexts/auth-context.tsx [Client Component SSR]
+    ./src/components/header.tsx [Client Component SSR]
+    ./src/components/header.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+
+
+./src/contexts/auth-context.tsx:5:1
+Export ref doesn't exist in target module
+[0m [90m  3 |[39m [36mimport[39m { createContext[33m,[39m useContext[33m,[39m useEffect[33m,[39m useState[33m,[39m type [33mReactNode[39m } [36mfrom[39m [32m'react'[39m
+ [90m  4 |[39m [36mimport[39m { type [33mUser[39m } [36mfrom[39m [32m'firebase/auth'[39m
+[31m[1m>[22m[39m[90m  5 |[39m [36mimport[39m { 
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m  6 |[39m   onAuthChange[33m,[39m 
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m  7 |[39m   getUserProfile[33m,[39m 
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m  8 |[39m   saveUserProfile[33m,[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m  9 |[39m   ref[33m,[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m 10 |[39m   onValue[33m,[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m 11 |[39m   database[33m,[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m 12 |[39m   type [33mUserProfile[39m 
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m 13 |[39m } [36mfrom[39m [32m'@/lib/firebase'[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 14 |[39m
+ [90m 15 |[39m [90m// Admin email - will automatically get admin role[39m
+ [90m 16 |[39m [36mconst[39m [33mADMIN_EMAIL[39m [33m=[39m [32m'ryu694602@gmail.com'[39m[0m
+
+The export ref was not found in module [project]/src/lib/firebase.ts [app-ssr] (ecmascript).
+Did you mean to import removeFavorite?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Server Component:
+    ./src/contexts/auth-context.tsx
+    ./src/app/layout.tsx
+
+  Client Component Browser:
+    ./src/contexts/auth-context.tsx [Client Component Browser]
+    ./src/components/header.tsx [Client Component Browser]
+    ./src/components/header.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/contexts/auth-context.tsx [Client Component SSR]
+    ./src/components/header.tsx [Client Component SSR]
+    ./src/components/header.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+
+ GET / 500 in 1087ms (compile: 945ms, render: 142ms)
+✓ Compiled in 115ms
+ GET / 200 in 302ms (compile: 93ms, render: 208ms)
+ GET / 200 in 288ms (compile: 65ms, render: 223ms)
+ GET / 200 in 75ms (compile: 1983µs, render: 73ms)
+ GET / 200 in 61ms (compile: 3ms, render: 58ms)
+ GET / 200 in 67ms (compile: 2ms, render: 65ms)
+ GET / 200 in 63ms (compile: 4ms, render: 58ms)
+ GET / 200 in 68ms (compile: 1824µs, render: 66ms)
+ GET / 200 in 63ms (compile: 2ms, render: 61ms)
+ GET /profile 200 in 144ms (compile: 123ms, render: 21ms)
+ GET /settings 200 in 372ms (compile: 360ms, render: 12ms)
+ GET / 200 in 69ms (compile: 2ms, render: 66ms)
+ GET /profile 200 in 11ms (compile: 1977µs, render: 9ms)
+ GET /more 200 in 79ms (compile: 61ms, render: 18ms)
+ GET /chat 200 in 100ms (compile: 75ms, render: 24ms)
+ GET /more 200 in 12ms (compile: 1896µs, render: 10ms)
+ GET / 200 in 41ms (compile: 1974µs, render: 39ms)
+ GET /profile 200 in 12ms (compile: 3ms, render: 10ms)
+ GET /auth 200 in 92ms (compile: 70ms, render: 23ms)
+ GET /auth 200 in 15ms (compile: 4ms, render: 10ms)
+ GET /profile 200 in 16ms (compile: 2ms, render: 13ms)
+ GET / 200 in 67ms (compile: 2ms, render: 65ms)
+ GET /profile 200 in 14ms (compile: 2ms, render: 12ms)
+ GET /settings 200 in 12ms (compile: 2ms, render: 10ms)
+ GET /settings 200 in 12ms (compile: 2ms, render: 10ms)
+ GET /settings 200 in 20ms (compile: 3ms, render: 16ms)
+ GET /about 200 in 96ms (compile: 70ms, render: 26ms)
+ GET /tos 200 in 98ms (compile: 75ms, render: 23ms)
+ GET /dmca 200 in 111ms (compile: 83ms, render: 27ms)
+ GET / 200 in 108ms (compile: 2ms, render: 105ms)
+ GET /profile 200 in 29ms (compile: 2ms, render: 27ms)
+ GET /settings 200 in 12ms (compile: 2ms, render: 10ms)
+ GET /settings 200 in 13ms (compile: 2ms, render: 11ms)
+ GET /settings 200 in 14ms (compile: 2ms, render: 12ms)
+ GET / 200 in 76ms (compile: 2ms, render: 74ms)
+ GET / 200 in 91ms (compile: 1960µs, render: 89ms)
+ GET / 200 in 72ms (compile: 1997µs, render: 70ms)
+ GET /profile 200 in 18ms (compile: 2ms, render: 16ms)
+ GET /settings 200 in 11ms (compile: 1951µs, render: 9ms)
+ GET / 200 in 75ms (compile: 1900µs, render: 73ms)
+✓ Compiled in 1125ms
+✓ Compiled in 151ms
+⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET / 200 in 543ms (compile: 175ms, render: 368ms)
+⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET /genre 200 in 192ms (compile: 135ms, render: 58ms)
+ GET / 200 in 101ms (compile: 3ms, render: 98ms)
+⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET /more 200 in 153ms (compile: 126ms, render: 27ms)
+⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET /favorites 200 in 166ms (compile: 139ms, render: 27ms)
+⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET /chat 200 in 163ms (compile: 130ms, render: 33ms)
+ GET /genre 200 in 36ms (compile: 2ms, render: 34ms)
+⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET /genre/martial-arts 200 in 1636ms (compile: 290ms, render: 1346ms)
+ GET / 200 in 102ms (compile: 3ms, render: 99ms)
+⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET /profile 200 in 251ms (compile: 220ms, render: 31ms)
+ GET / 200 in 105ms (compile: 1907µs, render: 103ms)
+ GET / 200 in 71ms (compile: 2ms, render: 69ms)
+ GET / 200 in 69ms (compile: 5ms, render: 64ms)
+⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET /profile 200 in 77ms (compile: 57ms, render: 20ms)
+⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET /auth 200 in 170ms (compile: 141ms, render: 29ms)
+ GET /auth 200 in 25ms (compile: 3ms, render: 22ms)
+✓ Compiled in 228ms
+ GET /profile 200 in 16ms (compile: 4ms, render: 12ms)
+ GET / 200 in 84ms (compile: 24ms, render: 60ms)
+ GET /profile 200 in 13ms (compile: 2ms, render: 11ms)
+⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET /settings 200 in 173ms (compile: 146ms, render: 27ms)
+✓ Compiled in 109ms
+ GET /settings 200 in 23ms (compile: 3ms, render: 20ms)
+ GET /profile 200 in 25ms (compile: 3ms, render: 22ms)
+ GET /settings 200 in 15ms (compile: 2ms, render: 13ms)
+ GET /settings 200 in 12ms (compile: 2ms, render: 10ms)
+✓ Compiled in 118ms
+ GET /settings 200 in 16ms (compile: 2ms, render: 14ms)
+ GET /profile 200 in 13ms (compile: 1997µs, render: 11ms)
+ GET /settings 200 in 16ms (compile: 2ms, render: 14ms)
+ GET / 200 in 253ms (compile: 2ms, render: 251ms)
+ GET / 200 in 94ms (compile: 2ms, render: 91ms)
+ GET /ongoing 200 in 1217ms (compile: 382ms, render: 835ms)
+ GET /api/anime/ongoing?page=2 200 in 754ms (compile: 374ms, render: 379ms)
+⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET /anime/goumon-baito-sub-indo 200 in 1609ms (compile: 305ms, render: 1304ms)
+ GET /favorites 200 in 31ms (compile: 20ms, render: 12ms)
+ GET / 200 in 101ms (compile: 3ms, render: 98ms)
+⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET /completed 200 in 245ms (compile: 206ms, render: 39ms)
+ GET /api/anime/completed?page=2 200 in 1116ms (compile: 173ms, render: 943ms)
+ GET /api/anime/completed?page=3 200 in 354ms (compile: 3ms, render: 351ms)
+ GET /api/anime/completed?page=4 200 in 537ms (compile: 4ms, render: 533ms)
+ GET /api/anime/completed?page=5 200 in 1815ms (compile: 1653µs, render: 1813ms)
+ GET /anime/tennis-world-cup-sub-indo 200 in 730ms (compile: 96ms, render: 634ms)
+ GET /chat 200 in 45ms (compile: 25ms, render: 20ms)
+ GET / 200 in 97ms (compile: 3ms, render: 94ms)
+✓ Compiled in 162ms
+⚠ Fast Refresh had to perform a full reload when ./src/contexts/auth-context.tsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET / 200 in 343ms (compile: 65ms, render: 278ms)
+ GET / 200 in 117ms (compile: 2ms, render: 115ms)
+ GET / 200 in 81ms (compile: 1956µs, render: 79ms)
+⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET /profile 200 in 94ms (compile: 70ms, render: 23ms)
+⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET /settings 200 in 82ms (compile: 58ms, render: 24ms)
+ GET / 200 in 84ms (compile: 1969µs, render: 82ms)
+ GET / 200 in 90ms (compile: 4ms, render: 86ms)
+ GET / 200 in 73ms (compile: 1919µs, render: 71ms)
+ GET / 200 in 108ms (compile: 4ms, render: 105ms)
+⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET /chat 200 in 93ms (compile: 62ms, render: 31ms)
+⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET /more 200 in 86ms (compile: 61ms, render: 25ms)
+⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET /more 200 in 93ms (compile: 58ms, render: 35ms)
+ GET /more 200 in 24ms (compile: 3ms, render: 21ms)
+ GET /more 200 in 15ms (compile: 1900µs, render: 13ms)
+ GET /more 200 in 20ms (compile: 1876µs, render: 18ms)
+ GET /more 200 in 24ms (compile: 2ms, render: 21ms)
+ GET /more 200 in 14ms (compile: 1893µs, render: 12ms)
+ GET /more 200 in 20ms (compile: 2ms, render: 18ms)
+ GET /more 200 in 24ms (compile: 3ms, render: 22ms)
+ GET /more 200 in 15ms (compile: 2ms, render: 13ms)
+ GET /more 200 in 14ms (compile: 2ms, render: 12ms)
+ GET /more 200 in 19ms (compile: 2ms, render: 17ms)
+ GET /more 200 in 13ms (compile: 1935µs, render: 11ms)
+ GET /more 200 in 14ms (compile: 2ms, render: 12ms)
+ GET /more 200 in 20ms (compile: 1833µs, render: 19ms)
+ GET /more 200 in 13ms (compile: 1944µs, render: 11ms)
+ GET /more 200 in 14ms (compile: 2ms, render: 12ms)
+ GET /more 200 in 14ms (compile: 2ms, render: 12ms)
+ GET /more 200 in 21ms (compile: 2ms, render: 19ms)
+ GET /more 200 in 29ms (compile: 6ms, render: 23ms)
+ GET /more 200 in 13ms (compile: 2ms, render: 11ms)
+ GET /more 200 in 13ms (compile: 1981µs, render: 11ms)
+ GET /more 200 in 16ms (compile: 2ms, render: 14ms)
+ GET /more 200 in 20ms (compile: 3ms, render: 18ms)
+ GET /more 200 in 25ms (compile: 3ms, render: 23ms)
+ GET /more 200 in 13ms (compile: 1742µs, render: 12ms)
+ GET /more 200 in 13ms (compile: 1979µs, render: 11ms)
+ GET /more 200 in 14ms (compile: 2ms, render: 11ms)
+ GET /more 200 in 12ms (compile: 1636µs, render: 11ms)
+ GET /more 200 in 21ms (compile: 3ms, render: 18ms)
+ GET /more 200 in 13ms (compile: 1779µs, render: 12ms)
+ GET /more 200 in 12ms (compile: 1809µs, render: 11ms)
+ GET /more 200 in 13ms (compile: 1813µs, render: 12ms)
+ GET / 200 in 303ms (compile: 13ms, render: 290ms)
+ GET / 200 in 121ms (compile: 3ms, render: 118ms)
+ GET / 200 in 96ms (compile: 2ms, render: 94ms)
+ GET / 200 in 83ms (compile: 2ms, render: 81ms)
+ GET / 200 in 89ms (compile: 2ms, render: 87ms)
+⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET /profile 200 in 93ms (compile: 70ms, render: 24ms)
+Upload error: [Error [FirebaseError]: Firebase Storage: An unknown error occurred, please check the error payload for server response. (storage/unknown)] {
+  code: 'storage/unknown',
+  customData: [Object],
+  status_: 404,
+  _baseMessage: 'Firebase Storage: An unknown error occurred, please check the error payload for server response. (storage/unknown)'
+}
+ POST /api/upload 500 in 929ms (compile: 320ms, render: 609ms)
+ GET / 200 in 93ms (compile: 6ms, render: 87ms)
+ GET / 200 in 81ms (compile: 1915µs, render: 79ms)
+ GET / 200 in 73ms (compile: 2ms, render: 71ms)
+ GET / 200 in 92ms (compile: 4ms, render: 88ms)
+ GET / 200 in 105ms (compile: 6ms, render: 99ms)
+ GET / 200 in 67ms (compile: 1879µs, render: 65ms)
+⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET /profile 200 in 126ms (compile: 98ms, render: 28ms)
+Upload request: {
+  fileName: '813590d7b84baeae21df08deffbce6fa.jpg',
+  fileType: 'image/jpeg',
+  fileSize: 89558,
+  userId: 'SBKcrPWiePWBBWTGatvWEq0LA8R2',
+  type: 'avatar',
+  hasToken: true
+}
+Uploading to path: avatars/SBKcrPWiePWBBWTGatvWEq0LA8R2/1773416641329_813590d7b84baeae21df08deffbce6fa.jpg
+Firebase Storage response: 404 {
+  "error": {
+    "code": 404,
+    "message": "Not Found."
+  }
+}
+Firebase upload error: {
+  "error": {
+    "code": 404,
+    "message": "Not Found."
+  }
+}
+Falling back to base64 storage
+ POST /api/upload 200 in 678ms (compile: 64ms, render: 614ms)
+ GET /profile 200 in 20ms (compile: 3ms, render: 17ms)
+ GET /settings 200 in 25ms (compile: 10ms, render: 16ms)
+ GET /profile 200 in 16ms (compile: 1993µs, render: 14ms)
+ GET / 200 in 75ms (compile: 2ms, render: 73ms)
+ GET / 200 in 76ms (compile: 2ms, render: 74ms)
+ GET / 200 in 76ms (compile: 6ms, render: 69ms)
+ GET / 200 in 64ms (compile: 2ms, render: 61ms)
+ GET / 200 in 74ms (compile: 2ms, render: 72ms)
+ GET / 200 in 74ms (compile: 2ms, render: 72ms)
+ GET /profile 200 in 17ms (compile: 2ms, render: 15ms)
+✓ Compiled in 245ms
+✓ Compiled in 311ms
+⨯ ./src/app/page.tsx:99:9
+Parsing ecmascript source code failed
+[0m [90m  97 |[39m           [33m<[39m[33m/[39m[33mdiv[39m[33m>[39m
+ [90m  98 |[39m         )}
+[31m[1m>[22m[39m[90m  99 |[39m       [33m<[39m[33m/[39m[33mdiv[39m[33m>[39m
+ [90m     |[39m         [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 100 |[39m     [33m<[39m[33m/[39m[33m>[39m
+ [90m 101 |[39m   )
+ [90m 102 |[39m }[0m
+
+Expected '>', got 'ident'
+
+
+ GET / 500 in 40ms (compile: 23ms, render: 16ms)
+✓ Compiled in 131ms
+⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET / 200 in 364ms (compile: 60ms, render: 304ms)
+✓ Compiled in 231ms
+⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET / 200 in 348ms (compile: 68ms, render: 280ms)
+⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET /ongoing 200 in 145ms (compile: 89ms, render: 56ms)
+ GET / 200 in 44ms (compile: 2ms, render: 41ms)
+⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET /chat 200 in 100ms (compile: 71ms, render: 30ms)
+⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET /anime/eris-seihai-sub-indo 200 in 2.6s (compile: 204ms, render: 2.4s)
+ GET / 200 in 40ms (compile: 3ms, render: 37ms)
+ GET / 200 in 98ms (compile: 2ms, render: 96ms)
+ GET / 200 in 83ms (compile: 3ms, render: 80ms)
+ GET / 200 in 81ms (compile: 2ms, render: 79ms)
+ GET / 200 in 109ms (compile: 2ms, render: 107ms)
+✓ Compiled in 350ms
+⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET / 200 in 305ms (compile: 70ms, render: 235ms)
+ GET / 200 in 59ms (compile: 3ms, render: 56ms)
+⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET / 200 in 87ms (compile: 61ms, render: 26ms)
+ GET / 200 in 54ms (compile: 4ms, render: 49ms)
+ GET /ongoing 200 in 37ms (compile: 17ms, render: 21ms)
+ GET / 200 in 27ms (compile: 1676µs, render: 26ms)
+ GET /ongoing 200 in 20ms (compile: 2ms, render: 18ms)
+ GET /ongoing 200 in 18ms (compile: 1844µs, render: 16ms)
+ GET /ongoing 200 in 19ms (compile: 1679µs, render: 17ms)
+ GET /ongoing 200 in 18ms (compile: 1723µs, render: 16ms)
+ GET /ongoing 200 in 27ms (compile: 3ms, render: 25ms)
+ GET /ongoing 200 in 27ms (compile: 2ms, render: 24ms)
+ GET /ongoing 200 in 26ms (compile: 3ms, render: 23ms)
+ GET /ongoing 200 in 27ms (compile: 3ms, render: 25ms)
+ GET /ongoing 200 in 31ms (compile: 2ms, render: 29ms)
+ GET /ongoing 200 in 46ms (compile: 3ms, render: 43ms)
+ GET /ongoing 200 in 20ms (compile: 3ms, render: 17ms)
+ GET /ongoing 200 in 18ms (compile: 1652µs, render: 16ms)
+ GET /ongoing 200 in 17ms (compile: 1744µs, render: 15ms)
+ GET /ongoing 200 in 16ms (compile: 1569µs, render: 15ms)
+ GET /ongoing 200 in 18ms (compile: 1710µs, render: 16ms)
+ GET /ongoing 200 in 17ms (compile: 1740µs, render: 16ms)
+ GET /ongoing 200 in 30ms (compile: 2ms, render: 28ms)
+ GET /ongoing 200 in 26ms (compile: 3ms, render: 24ms)
+ GET /ongoing 200 in 27ms (compile: 2ms, render: 24ms)
+ GET /ongoing 200 in 25ms (compile: 3ms, render: 23ms)
+ GET /ongoing 200 in 27ms (compile: 2ms, render: 24ms)
+ GET /ongoing 200 in 28ms (compile: 2ms, render: 26ms)
+ GET /ongoing 200 in 22ms (compile: 4ms, render: 19ms)
+ GET /ongoing 200 in 19ms (compile: 2ms, render: 17ms)
+ GET /ongoing 200 in 20ms (compile: 2ms, render: 17ms)
+ GET /ongoing 200 in 17ms (compile: 1765µs, render: 15ms)
+ GET /ongoing 200 in 17ms (compile: 1625µs, render: 15ms)
+ GET /ongoing 200 in 16ms (compile: 1706µs, render: 15ms)
+ GET /ongoing 200 in 18ms (compile: 2ms, render: 16ms)
+ GET /ongoing 200 in 17ms (compile: 1789µs, render: 15ms)
+ GET /ongoing 200 in 23ms (compile: 1624µs, render: 22ms)
+ GET /ongoing 200 in 41ms (compile: 2ms, render: 39ms)
+ GET /ongoing 200 in 17ms (compile: 2ms, render: 15ms)
+ GET /ongoing 200 in 17ms (compile: 1751µs, render: 15ms)
+ GET /ongoing 200 in 16ms (compile: 1837µs, render: 14ms)
+ GET /ongoing 200 in 18ms (compile: 1781µs, render: 17ms)
+ GET /ongoing 200 in 16ms (compile: 1799µs, render: 15ms)
+ GET /ongoing 200 in 16ms (compile: 1622µs, render: 15ms)
+ GET /ongoing 200 in 18ms (compile: 1695µs, render: 16ms)
+ GET /ongoing 200 in 17ms (compile: 1664µs, render: 15ms)
+ GET /ongoing 200 in 16ms (compile: 1773µs, render: 14ms)
+ GET /ongoing 200 in 30ms (compile: 1813µs, render: 28ms)
+ GET /ongoing 200 in 18ms (compile: 1961µs, render: 16ms)
+ GET /ongoing 200 in 17ms (compile: 1882µs, render: 15ms)
+ GET /ongoing 200 in 18ms (compile: 1851µs, render: 16ms)
+ GET /ongoing 200 in 18ms (compile: 1893µs, render: 16ms)
+ GET /ongoing 200 in 17ms (compile: 1665µs, render: 16ms)
+ GET /ongoing 200 in 24ms (compile: 1842µs, render: 22ms)
+ GET /ongoing 200 in 19ms (compile: 1772µs, render: 18ms)
+ GET /ongoing 200 in 21ms (compile: 1876µs, render: 19ms)
+ GET /ongoing 200 in 17ms (compile: 1720µs, render: 15ms)
+ GET /ongoing 200 in 33ms (compile: 1587µs, render: 31ms)
+ GET /ongoing 200 in 17ms (compile: 1789µs, render: 16ms)
+ GET / 200 in 180ms (compile: 2ms, render: 177ms)
+ GET / 200 in 35ms (compile: 1852µs, render: 33ms)
+✓ Compiled in 287ms
+ GET /chat 200 in 39ms (compile: 24ms, render: 16ms)
+ GET /chat 200 in 17ms (compile: 2ms, render: 14ms)
+⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET / 200 in 313ms (compile: 80ms, render: 233ms)
+ GET /home 200 in 493ms (compile: 437ms, render: 57ms)
+⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET /genre 200 in 157ms (compile: 94ms, render: 63ms)
+ GET /genre 200 in 58ms (compile: 3ms, render: 55ms)
+ GET /genre 200 in 74ms (compile: 3ms, render: 71ms)
+ GET / 200 in 51ms (compile: 3ms, render: 48ms)
+ GET /profile 200 in 34ms (compile: 19ms, render: 16ms)
+ GET /settings 200 in 37ms (compile: 18ms, render: 19ms)
+⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET /about 200 in 187ms (compile: 165ms, render: 22ms)
+⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET /dmca 200 in 240ms (compile: 213ms, render: 27ms)
+⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET /tos 200 in 200ms (compile: 178ms, render: 22ms)
+ GET / 200 in 41ms (compile: 2ms, render: 39ms)
+ GET / 200 in 44ms (compile: 2ms, render: 42ms)
+ GET /home 200 in 36ms (compile: 2ms, render: 33ms)
+ GET / 200 in 39ms (compile: 2ms, render: 37ms)
+ GET / 200 in 36ms (compile: 1955µs, render: 35ms)
+ GET / 200 in 37ms (compile: 2ms, render: 35ms)
+ GET / 200 in 38ms (compile: 1982µs, render: 36ms)
+ GET / 200 in 42ms (compile: 2ms, render: 40ms)
+ GET / 200 in 52ms (compile: 2ms, render: 50ms)
+ GET / 200 in 47ms (compile: 3ms, render: 44ms)
+ GET / 200 in 40ms (compile: 3ms, render: 37ms)
+ GET / 200 in 37ms (compile: 2ms, render: 35ms)
+ GET / 200 in 34ms (compile: 1989µs, render: 32ms)
+ GET / 200 in 34ms (compile: 2ms, render: 32ms)
+ GET / 200 in 40ms (compile: 2ms, render: 38ms)
+ GET / 200 in 52ms (compile: 3ms, render: 49ms)
+ GET / 200 in 34ms (compile: 2ms, render: 32ms)
+ GET / 200 in 40ms (compile: 1967µs, render: 38ms)
+✓ Compiled in 238ms
+⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET / 200 in 158ms (compile: 74ms, render: 84ms)
+ GET / 200 in 279ms (compile: 2ms, render: 277ms)
+⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET /more 200 in 124ms (compile: 78ms, render: 45ms)
+ GET / 200 in 245ms (compile: 23ms, render: 221ms)
+✓ Compiled in 158ms
+⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET / 200 in 153ms (compile: 87ms, render: 66ms)
+ GET / 200 in 332ms (compile: 6ms, render: 327ms)
+ GET / 200 in 70ms (compile: 5ms, render: 65ms)
+ GET / 200 in 113ms (compile: 4ms, render: 110ms)
+ GET / 200 in 79ms (compile: 6ms, render: 73ms)
+ GET / 200 in 93ms (compile: 2ms, render: 91ms)
+✓ Compiled in 235ms
+ GET /profile 200 in 37ms (compile: 19ms, render: 18ms)
+✓ Compiled in 137ms
+ GET /profile 200 in 15ms (compile: 2ms, render: 13ms)
+✓ Compiled in 166ms
+ GET /profile 200 in 18ms (compile: 4ms, render: 14ms)
+ GET /genre 200 in 84ms (compile: 52ms, render: 32ms)
+⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET /genre/school 200 in 1750ms (compile: 234ms, render: 1516ms)
+ GET /anime/mayonaka-tune-sub-indo 200 in 1601ms (compile: 134ms, render: 1466ms)
+⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET / 200 in 505ms (compile: 98ms, render: 407ms)
+ GET / 200 in 73ms (compile: 2ms, render: 70ms)
+ GET / 200 in 107ms (compile: 3ms, render: 104ms)
+ GET / 200 in 66ms (compile: 2ms, render: 64ms)
+ GET / 200 in 76ms (compile: 2ms, render: 73ms)
+✓ Compiled in 270ms
+⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET / 200 in 321ms (compile: 83ms, render: 238ms)
+ GET / 200 in 81ms (compile: 3ms, render: 79ms)
+ GET /chat 200 in 79ms (compile: 22ms, render: 56ms)
+ GET / 200 in 79ms (compile: 1850µs, render: 77ms)
+ GET /chat 200 in 20ms (compile: 3ms, render: 17ms)
+✓ Compiled in 288ms
+⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET / 200 in 417ms (compile: 93ms, render: 324ms)
+ GET /chat 200 in 41ms (compile: 3ms, render: 38ms)
+Upload request: {
+  fileName: 'sticker_1773419245481.png',
+  fileType: 'image/png',
+  fileSize: 62374,
+  userId: 'SBKcrPWiePWBBWTGatvWEq0LA8R2',
+  type: 'sticker',
+  hasToken: false
+}
+Uploading to path: stickers/SBKcrPWiePWBBWTGatvWEq0LA8R2/1773419246297_sticker_1773419245481.png
+Firebase Storage response: 404 {
+  "error": {
+    "code": 404,
+    "message": "Not Found."
+  }
+}
+Firebase upload error: {
+  "error": {
+    "code": 404,
+    "message": "Not Found."
+  }
+}
+Falling back to base64 storage
+ POST /api/upload 200 in 723ms (compile: 36ms, render: 687ms)
+ GET / 200 in 93ms (compile: 3ms, render: 91ms)
+ GET / 200 in 91ms (compile: 1988µs, render: 89ms)
+⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET /chat 200 in 98ms (compile: 73ms, render: 25ms)
+⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET /user?uid=SBKcrPWiePWBBWTGatvWEq0LA8R2 404 in 201ms (compile: 175ms, render: 26ms)
+ GET /user?uid=SBKcrPWiePWBBWTGatvWEq0LA8R2 404 in 215ms (compile: 19ms, render: 196ms)
+⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET /user?uid=SBKcrPWiePWBBWTGatvWEq0LA8R2 200 in 629ms (compile: 597ms, render: 32ms)
+ GET /user?uid=SBKcrPWiePWBBWTGatvWEq0LA8R2 200 in 18ms (compile: 4ms, render: 14ms)
+ GET /user?uid=SBKcrPWiePWBBWTGatvWEq0LA8R2 200 in 17ms (compile: 3ms, render: 15ms)
+ GET /user?uid=SBKcrPWiePWBBWTGatvWEq0LA8R2 200 in 14ms (compile: 3ms, render: 12ms)
+ GET /user?uid=SBKcrPWiePWBBWTGatvWEq0LA8R2 200 in 194ms (compile: 5ms, render: 188ms)
+ GET /user?uid=SBKcrPWiePWBBWTGatvWEq0LA8R2 200 in 19ms (compile: 7ms, render: 12ms)
+ GET / 200 in 236ms (compile: 27ms, render: 209ms)
+⚠ Server is approaching the used memory threshold, restarting...
+▲ Next.js 16.1.6 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://21.0.5.20:3000
+- Environments: .env
+
+✓ Starting...
+✓ Ready in 1109ms
+⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET /anime/mugen-gacha-sub-indo 200 in 3.9s (compile: 3.1s, render: 778ms)
+ GET / 200 in 370ms (compile: 129ms, render: 242ms)
+ GET /chat 200 in 137ms (compile: 55ms, render: 82ms)
+ GET /user?uid=SBKcrPWiePWBBWTGatvWEq0LA8R2 200 in 74ms (compile: 53ms, render: 22ms)
+ GET / 200 in 103ms (compile: 3ms, render: 100ms)
+ GET /profile 200 in 144ms (compile: 129ms, render: 15ms)
+ GET /chat 200 in 21ms (compile: 3ms, render: 18ms)
+ GET /user?uid=SBKcrPWiePWBBWTGatvWEq0LA8R2 200 in 18ms (compile: 3ms, render: 15ms)
+ GET / 200 in 86ms (compile: 4ms, render: 82ms)
+ GET / 200 in 79ms (compile: 2ms, render: 76ms)
+ GET /chat 200 in 16ms (compile: 4ms, render: 12ms)
+⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET /user?uid=SBKcrPWiePWBBWTGatvWEq0LA8R2 200 in 164ms (compile: 118ms, render: 46ms)
+✓ Compiled in 149ms
+ GET /profile 200 in 19ms (compile: 3ms, render: 16ms)
+ GET /settings 200 in 99ms (compile: 75ms, render: 24ms)
+ GET /about 200 in 51ms (compile: 36ms, render: 15ms)
+ GET /tos 200 in 63ms (compile: 45ms, render: 18ms)
+ GET / 200 in 115ms (compile: 2ms, render: 113ms)
+ GET / 200 in 88ms (compile: 2ms, render: 86ms)
+ GET / 200 in 97ms (compile: 6ms, render: 92ms)
+ GET /profile 200 in 17ms (compile: 3ms, render: 14ms)
+ GET /chat 200 in 16ms (compile: 2ms, render: 14ms)
+⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET /user?uid=SBKcrPWiePWBBWTGatvWEq0LA8R2 200 in 70ms (compile: 45ms, render: 24ms)
+✓ Compiled in 182ms
+ GET /profile 200 in 13ms (compile: 2ms, render: 11ms)
+ GET /user?uid=SBKcrPWiePWBBWTGatvWEq0LA8R2 200 in 17ms (compile: 1828µs, render: 15ms)
+ GET /more 200 in 51ms (compile: 40ms, render: 12ms)
+✓ Compiled in 138ms
+⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET /more 200 in 69ms (compile: 44ms, render: 25ms)
+ GET /more 200 in 30ms (compile: 2ms, render: 27ms)
+ GET /more 200 in 14ms (compile: 1969µs, render: 12ms)
+ GET /more 200 in 14ms (compile: 1701µs, render: 13ms)
+ GET /more 200 in 21ms (compile: 2ms, render: 18ms)
+ GET /more 200 in 16ms (compile: 3ms, render: 13ms)
+ GET /more 200 in 18ms (compile: 1842µs, render: 16ms)
+ GET /more 200 in 21ms (compile: 3ms, render: 18ms)
+ GET /more 200 in 14ms (compile: 1738µs, render: 13ms)
+ GET /genre 200 in 172ms (compile: 103ms, render: 68ms)
+ GET /genre/ecchi 200 in 1827ms (compile: 517ms, render: 1310ms)
+⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+✓ Compiled in 0ms
+ GET /genre 200 in 844ms (compile: 66ms, render: 778ms)
+ GET /genre 200 in 150ms (compile: 4ms, render: 146ms)
+ GET /genre/ecchi 200 in 872ms (compile: 294ms, render: 578ms)
+ GET /genre 200 in 157ms (compile: 78ms, render: 79ms)
+ GET /genre 200 in 165ms (compile: 3ms, render: 163ms)
+ GET /genre/ecchi 200 in 86ms (compile: 54ms, render: 32ms)
+⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET / 200 in 113ms (compile: 63ms, render: 50ms)
+✓ Compiled in 242ms
+ GET /search?q=oshi+No+Ko 200 in 835ms (compile: 816ms, render: 19ms)
+⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET /anime/oshi-ko-sub-indo 200 in 1573ms (compile: 189ms, render: 1384ms)
+✓ Compiled in 161ms
+ GET /anime/oshi-ko-s2-sub-indo 200 in 1271ms (compile: 57ms, render: 1214ms)
+ GET /anime/oshi-ko-s3-sub-indo 200 in 416ms (compile: 53ms, render: 363ms)
+ GET /anime/ninja-koroshiya-futarigurashi-sub-indo 200 in 427ms (compile: 54ms, render: 373ms)
+ GET /anime/oshi-ko-s2-sub-indo 200 in 91ms (compile: 53ms, render: 38ms)
+ GET /anime/oshi-ko-s3-sub-indo 200 in 92ms (compile: 53ms, render: 39ms)
+ GET /watch/onk-s3-episode-1-sub-indo 200 in 1371ms (compile: 831ms, render: 540ms)
+✓ Compiled in 170ms
+ GET /favorites 200 in 63ms (compile: 38ms, render: 25ms)
+⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET /more 200 in 83ms (compile: 61ms, render: 22ms)
+ GET /history 200 in 216ms (compile: 199ms, render: 17ms)
+⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET /chat 200 in 100ms (compile: 69ms, render: 31ms)
+⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET /user?uid=SBKcrPWiePWBBWTGatvWEq0LA8R2 200 in 96ms (compile: 57ms, render: 40ms)
+⚠ Cross origin request detected from preview-chat-50110f9a-4a88-4272-b88f-d55cfb721a67.space.z.ai to /_next/* resource. In a future major version of Next.js, you will need to explicitly configure "allowedDevOrigins" in next.config to allow this.
+Read more: https://nextjs.org/docs/app/api-reference/config/next-config-js/allowedDevOrigins
+✓ Compiled in 211ms
+⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET / 200 in 359ms (compile: 68ms, render: 290ms)
+✓ Compiled in 168ms
+⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET /profile 200 in 105ms (compile: 76ms, render: 29ms)
+⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET / 200 in 340ms (compile: 66ms, render: 274ms)
+ GET / 200 in 85ms (compile: 3ms, render: 83ms)
+ GET / 200 in 80ms (compile: 2ms, render: 77ms)
+ GET /profile 200 in 16ms (compile: 5ms, render: 11ms)
+⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET /settings 200 in 79ms (compile: 59ms, render: 20ms)
+ GET /chat 200 in 26ms (compile: 4ms, render: 22ms)
+ GET /user?uid=SBKcrPWiePWBBWTGatvWEq0LA8R2 200 in 21ms (compile: 3ms, render: 19ms)
+✓ Compiled in 197ms
+⚠ Fast Refresh had to perform a full reload when ./src/lib/firebase.ts [app-client] (ecmascript) <locals> changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET /user?uid=SBKcrPWiePWBBWTGatvWEq0LA8R2 200 in 253ms (compile: 57ms, render: 196ms)
+⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET /more 200 in 99ms (compile: 66ms, render: 33ms)
+ GET /more 200 in 24ms (compile: 3ms, render: 21ms)
+⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET /history 200 in 82ms (compile: 53ms, render: 29ms)
+⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET /watch/onk-s3-episode-1-sub-indo 200 in 256ms (compile: 168ms, render: 88ms)
+⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET / 200 in 365ms (compile: 68ms, render: 297ms)
+✓ Compiled in 181ms
+⚠ Fast Refresh had to perform a full reload when ./src/lib/firebase.ts [app-client] (ecmascript) <locals> changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET / 200 in 402ms (compile: 76ms, render: 326ms)
+⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET /chat 200 in 88ms (compile: 62ms, render: 26ms)
+⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET /user?uid=SBKcrPWiePWBBWTGatvWEq0LA8R2 200 in 101ms (compile: 70ms, render: 30ms)
+ GET / 200 in 110ms (compile: 3ms, render: 107ms)
+ GET / 200 in 75ms (compile: 2ms, render: 73ms)
+ GET /auth 200 in 48ms (compile: 34ms, render: 15ms)
+⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET /profile 200 in 74ms (compile: 53ms, render: 22ms)
+ GET /profile 200 in 19ms (compile: 3ms, render: 16ms)
+ GET /chat 200 in 17ms (compile: 3ms, render: 14ms)
+⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET /user?uid=SBKcrPWiePWBBWTGatvWEq0LA8R2 200 in 126ms (compile: 96ms, render: 30ms)
+⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET /watch/onk-s3-episode-1-sub-indo 200 in 224ms (compile: 136ms, render: 87ms)
+ GET / 200 in 90ms (compile: 3ms, render: 88ms)
+ GET / 200 in 115ms (compile: 3ms, render: 112ms)
+ GET / 200 in 95ms (compile: 1935µs, render: 93ms)
+ GET / 200 in 77ms (compile: 2ms, render: 75ms)
+ GET /chat 200 in 18ms (compile: 6ms, render: 13ms)
+⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET /user?uid=SBKcrPWiePWBBWTGatvWEq0LA8R2 200 in 120ms (compile: 97ms, render: 23ms)
+ GET / 200 in 83ms (compile: 2ms, render: 81ms)
+ GET / 200 in 82ms (compile: 2ms, render: 80ms)
+ GET /chat 200 in 175ms (compile: 2ms, render: 173ms)
+ GET / 200 in 104ms (compile: 3ms, render: 100ms)
+ GET / 200 in 75ms (compile: 1901µs, render: 73ms)
+ GET / 200 in 115ms (compile: 3ms, render: 112ms)
+✓ Compiled in 150ms
+✓ Compiled in 158ms
+✓ Compiled in 118ms
+✓ Compiled in 166ms
+⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET / 200 in 343ms (compile: 66ms, render: 277ms)
+ GET /chat 200 in 14ms (compile: 2ms, render: 11ms)
+ GET / 200 in 86ms (compile: 2ms, render: 84ms)
+ GET /auth 200 in 92ms (compile: 6ms, render: 86ms)
+⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET /more 200 in 234ms (compile: 52ms, render: 181ms)
+ GET /more 200 in 32ms (compile: 1966µs, render: 30ms)
+⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET /tos 200 in 108ms (compile: 71ms, render: 38ms)
+ GET / 200 in 101ms (compile: 3ms, render: 98ms)
+ GET /chat 200 in 37ms (compile: 3ms, render: 34ms)
+⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET /user?uid=SBKcrPWiePWBBWTGatvWEq0LA8R2 200 in 113ms (compile: 85ms, render: 28ms)
+ GET /user?uid=SBKcrPWiePWBBWTGatvWEq0LA8R2 200 in 21ms (compile: 3ms, render: 18ms)
+⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET /watch/onk-s3-episode-1-sub-indo 200 in 218ms (compile: 152ms, render: 67ms)
+⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET /anime/oshi-ko-s2-sub-indo 200 in 243ms (compile: 155ms, render: 87ms)
+ GET / 200 in 102ms (compile: 3ms, render: 98ms)
+ GET / 200 in 90ms (compile: 2ms, render: 88ms)
+ GET / 200 in 74ms (compile: 2ms, render: 71ms)
+ GET / 200 in 73ms (compile: 3ms, render: 71ms)
+ GET / 200 in 79ms (compile: 1969µs, render: 77ms)
+ GET /schedule 200 in 403ms (compile: 351ms, render: 52ms)
+ GET /anime/1piece-sub-indo 200 in 864ms (compile: 92ms, render: 772ms)
+ GET /watch/wpoiec-episode-10-sub-indo 200 in 2.4s (compile: 72ms, render: 2.3s)
+ GET / 200 in 93ms (compile: 4ms, render: 89ms)
+ GET /auth 200 in 62ms (compile: 12ms, render: 50ms)
+ GET /profile 200 in 31ms (compile: 15ms, render: 16ms)
+ GET / 200 in 71ms (compile: 2ms, render: 69ms)
+ GET /auth 200 in 14ms (compile: 2ms, render: 11ms)
+ GET /profile 200 in 16ms (compile: 3ms, render: 13ms)
+ GET / 200 in 81ms (compile: 2ms, render: 78ms)
+⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET /chat 200 in 92ms (compile: 71ms, render: 21ms)
+⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET /user?uid=SBKcrPWiePWBBWTGatvWEq0LA8R2 200 in 128ms (compile: 99ms, render: 29ms)
+ GET /profile 200 in 12ms (compile: 1988µs, render: 10ms)
+ GET / 200 in 98ms (compile: 3ms, render: 95ms)
+ GET / 200 in 78ms (compile: 10ms, render: 68ms)
+ GET / 200 in 76ms (compile: 4ms, render: 72ms)
+ GET / 200 in 77ms (compile: 2ms, render: 75ms)
+ GET /chat 200 in 173ms (compile: 8ms, render: 165ms)
+ GET /more 200 in 34ms (compile: 10ms, render: 24ms)
+ GET /chat 200 in 18ms (compile: 3ms, render: 15ms)
+ GET / 200 in 36ms (compile: 1970µs, render: 34ms)
+ GET /auth 200 in 25ms (compile: 8ms, render: 17ms)
+ GET /profile 200 in 24ms (compile: 9ms, render: 15ms)
+ GET / 200 in 95ms (compile: 2ms, render: 93ms)
+ GET /auth 200 in 22ms (compile: 4ms, render: 18ms)
+ GET /profile 200 in 16ms (compile: 2ms, render: 14ms)
+ GET /profile 200 in 16ms (compile: 2ms, render: 14ms)
+ GET / 200 in 81ms (compile: 2ms, render: 79ms)
+ GET /chat 200 in 13ms (compile: 1937µs, render: 11ms)
+ GET /chat 200 in 14ms (compile: 1808µs, render: 12ms)
+ GET / 200 in 77ms (compile: 1883µs, render: 75ms)
+ GET /chat 200 in 40ms (compile: 7ms, render: 32ms)
+ GET / 200 in 78ms (compile: 3ms, render: 76ms)
+ GET / 200 in 84ms (compile: 1879µs, render: 83ms)
+ GET / 200 in 82ms (compile: 5ms, render: 77ms)
+ GET / 200 in 66ms (compile: 1995µs, render: 64ms)
+ GET / 200 in 83ms (compile: 1806µs, render: 82ms)
+ GET / 200 in 60ms (compile: 2ms, render: 58ms)
+ GET / 200 in 81ms (compile: 1916µs, render: 79ms)
+ GET / 200 in 77ms (compile: 1820µs, render: 75ms)
+ GET / 200 in 62ms (compile: 1883µs, render: 60ms)
+✓ Compiled in 341ms
+⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET / 200 in 374ms (compile: 76ms, render: 298ms)
+ GET / 200 in 107ms (compile: 3ms, render: 104ms)
+ GET / 200 in 62ms (compile: 1966µs, render: 61ms)
+ GET / 200 in 61ms (compile: 2ms, render: 59ms)
+ GET / 200 in 102ms (compile: 1858µs, render: 100ms)
+ GET / 200 in 97ms (compile: 3ms, render: 95ms)
+ GET / 200 in 58ms (compile: 1942µs, render: 56ms)
+ GET / 200 in 112ms (compile: 1888µs, render: 110ms)
+ GET / 200 in 98ms (compile: 3ms, render: 96ms)
+ GET / 200 in 103ms (compile: 3ms, render: 100ms)
+ GET / 200 in 58ms (compile: 1939µs, render: 57ms)
+ GET / 200 in 63ms (compile: 2ms, render: 60ms)
+ GET / 200 in 76ms (compile: 1832µs, render: 74ms)
+ GET / 200 in 57ms (compile: 1999µs, render: 55ms)
+ GET / 200 in 74ms (compile: 2ms, render: 71ms)
+ GET / 200 in 100ms (compile: 3ms, render: 98ms)
+⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET /chat 200 in 83ms (compile: 60ms, render: 23ms)
+✓ Compiled in 134ms
+⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET /genre 200 in 120ms (compile: 70ms, render: 50ms)
+ GET /chat 200 in 20ms (compile: 3ms, render: 17ms)
+⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET /auth 200 in 132ms (compile: 89ms, render: 43ms)
+⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET /profile 200 in 75ms (compile: 55ms, render: 20ms)
+⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET / 200 in 323ms (compile: 73ms, render: 250ms)
+ GET / 200 in 99ms (compile: 3ms, render: 96ms)
+ GET /chat 200 in 19ms (compile: 3ms, render: 16ms)
+ GET / 200 in 69ms (compile: 3ms, render: 67ms)
+ GET / 200 in 80ms (compile: 2ms, render: 78ms)
+ GET / 200 in 65ms (compile: 1871µs, render: 63ms)
+ GET / 200 in 76ms (compile: 2ms, render: 74ms)
+ GET / 200 in 75ms (compile: 1820µs, render: 74ms)
+⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET /chat 200 in 118ms (compile: 86ms, render: 33ms)
+✓ Compiled in 166ms
+⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET /profile 200 in 90ms (compile: 60ms, render: 29ms)
+⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET /settings 200 in 89ms (compile: 69ms, render: 20ms)
+ GET /settings 200 in 12ms (compile: 1989µs, render: 10ms)
+✓ Compiled in 129ms
+⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET /chat 200 in 75ms (compile: 54ms, render: 21ms)
+⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET /genre 200 in 108ms (compile: 59ms, render: 50ms)
+⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET /favorites 200 in 89ms (compile: 64ms, render: 25ms)
+⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET /more 200 in 142ms (compile: 99ms, render: 43ms)
+⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET /history 200 in 88ms (compile: 67ms, render: 21ms)
+ GET /chat 200 in 24ms (compile: 3ms, render: 21ms)
+⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET /user?uid=SBKcrPWiePWBBWTGatvWEq0LA8R2 200 in 106ms (compile: 75ms, render: 31ms)
+⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET / 200 in 347ms (compile: 68ms, render: 280ms)
+✓ Compiled in 111ms
+✓ Compiled in 124ms
+✓ Compiled in 118ms
+⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET / 200 in 316ms (compile: 70ms, render: 247ms)
+ GET / 200 in 98ms (compile: 2ms, render: 96ms)
+⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET /chat 200 in 75ms (compile: 55ms, render: 20ms)
+⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET /favorites 200 in 107ms (compile: 64ms, render: 43ms)
+⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET /more 200 in 47ms (compile: 32ms, render: 15ms)
+ GET /chat 200 in 15ms (compile: 1872µs, render: 13ms)
+ GET / 200 in 29ms (compile: 1865µs, render: 27ms)
+ GET /chat 200 in 15ms (compile: 1867µs, render: 13ms)
+⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET /user?uid=SBKcrPWiePWBBWTGatvWEq0LA8R2 200 in 69ms (compile: 55ms, render: 13ms)
+⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET /profile 200 in 79ms (compile: 53ms, render: 26ms)
+ GET /more 200 in 22ms (compile: 3ms, render: 18ms)
+⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET /history 200 in 64ms (compile: 44ms, render: 20ms)
+ GET / 200 in 94ms (compile: 2ms, render: 91ms)
+ GET /profile 200 in 13ms (compile: 2ms, render: 11ms)
+ GET /chat 200 in 20ms (compile: 3ms, render: 18ms)
+ GET /user?uid=SBKcrPWiePWBBWTGatvWEq0LA8R2 200 in 14ms (compile: 2ms, render: 12ms)
+ GET /chat 200 in 22ms (compile: 3ms, render: 19ms)
+ GET / 200 in 36ms (compile: 2ms, render: 33ms)
+ GET /profile 200 in 14ms (compile: 1872µs, render: 12ms)
+ GET / 200 in 66ms (compile: 1849µs, render: 65ms)
+ GET / 200 in 79ms (compile: 1928µs, render: 77ms)
+ GET / 200 in 85ms (compile: 8ms, render: 76ms)
+ GET / 200 in 88ms (compile: 1945µs, render: 86ms)
+ GET / 200 in 70ms (compile: 2ms, render: 68ms)
+ GET / 200 in 83ms (compile: 2ms, render: 81ms)
+⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET /completed 200 in 157ms (compile: 111ms, render: 46ms)
+ GET /api/anime/completed?page=2 200 in 643ms (compile: 87ms, render: 556ms)
+ GET /api/anime/completed?page=3 200 in 338ms (compile: 1958µs, render: 336ms)
+ GET /api/anime/completed?page=4 200 in 445ms (compile: 1524µs, render: 443ms)
+ GET /api/anime/completed?page=5 200 in 494ms (compile: 1749µs, render: 492ms)
+ GET / 200 in 99ms (compile: 1800µs, render: 97ms)
+ GET / 200 in 101ms (compile: 10ms, render: 91ms)
+ GET /chat 200 in 22ms (compile: 9ms, render: 12ms)
+⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET /user?uid=SBKcrPWiePWBBWTGatvWEq0LA8R2 200 in 67ms (compile: 47ms, render: 19ms)
+ GET / 200 in 79ms (compile: 1799µs, render: 77ms)
+ GET / 200 in 66ms (compile: 1863µs, render: 64ms)
+ GET / 200 in 67ms (compile: 1876µs, render: 65ms)
+ GET /chat 200 in 13ms (compile: 2ms, render: 11ms)
+ GET /user?uid=SBKcrPWiePWBBWTGatvWEq0LA8R2 200 in 14ms (compile: 2ms, render: 12ms)
+⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET /profile 200 in 129ms (compile: 114ms, render: 15ms)
+ GET /chat 200 in 15ms (compile: 2ms, render: 13ms)
+ GET /user?uid=SBKcrPWiePWBBWTGatvWEq0LA8R2 200 in 16ms (compile: 2ms, render: 14ms)
+ GET /profile 200 in 14ms (compile: 1875µs, render: 12ms)
+ GET /chat 200 in 13ms (compile: 1881µs, render: 11ms)
+ GET /user?uid=SBKcrPWiePWBBWTGatvWEq0LA8R2 200 in 14ms (compile: 2ms, render: 12ms)
+ GET / 200 in 78ms (compile: 2ms, render: 76ms)
+ GET /chat 200 in 14ms (compile: 2ms, render: 12ms)
+ GET /user?uid=SBKcrPWiePWBBWTGatvWEq0LA8R2 200 in 12ms (compile: 2ms, render: 10ms)
+ GET /profile 200 in 16ms (compile: 2ms, render: 14ms)
+ GET /chat 200 in 12ms (compile: 2ms, render: 10ms)
+ GET /user?uid=SBKcrPWiePWBBWTGatvWEq0LA8R2 200 in 12ms (compile: 1971µs, render: 11ms)
+ GET / 200 in 75ms (compile: 2ms, render: 73ms)
+ GET / 200 in 71ms (compile: 2ms, render: 69ms)
+ GET / 200 in 66ms (compile: 1897µs, render: 64ms)
+ GET / 200 in 62ms (compile: 3ms, render: 59ms)
+ GET / 200 in 74ms (compile: 1999µs, render: 72ms)
+ GET / 200 in 77ms (compile: 1978µs, render: 75ms)
+⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET /anime/mode-hell-sub-indo 200 in 598ms (compile: 186ms, render: 412ms)
+ GET / 200 in 36ms (compile: 3ms, render: 33ms)
+ GET / 200 in 91ms (compile: 3ms, render: 88ms)
+ GET /chat 200 in 13ms (compile: 2ms, render: 11ms)
+⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET /user?uid=SBKcrPWiePWBBWTGatvWEq0LA8R2 200 in 113ms (compile: 98ms, render: 14ms)
+ GET / 200 in 63ms (compile: 1907µs, render: 61ms)
+ GET / 200 in 75ms (compile: 2ms, render: 73ms)
+ GET / 200 in 63ms (compile: 2ms, render: 61ms)
+ GET / 200 in 89ms (compile: 1988µs, render: 87ms)
+ GET /more 200 in 23ms (compile: 10ms, render: 14ms)
+ GET /favorites 200 in 35ms (compile: 11ms, render: 24ms)
+ GET /more 200 in 15ms (compile: 2ms, render: 13ms)
+ GET /history 200 in 27ms (compile: 13ms, render: 14ms)
+ GET /nobar 200 in 317ms (compile: 299ms, render: 18ms)
+ GET / 200 in 90ms (compile: 6ms, render: 84ms)
+ GET / 200 in 77ms (compile: 2ms, render: 75ms)
+ GET /chat 200 in 15ms (compile: 1993µs, render: 13ms)
+⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET /user?uid=SBKcrPWiePWBBWTGatvWEq0LA8R2 200 in 61ms (compile: 43ms, render: 18ms)
+ GET /profile 200 in 19ms (compile: 2ms, render: 16ms)
+⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET /auth 200 in 63ms (compile: 47ms, render: 16ms)
+ GET /auth 200 in 20ms (compile: 1778µs, render: 19ms)
+ GET / 200 in 90ms (compile: 2ms, render: 88ms)
+ GET / 200 in 76ms (compile: 2ms, render: 74ms)
+ GET / 200 in 93ms (compile: 2ms, render: 91ms)
+ GET / 200 in 68ms (compile: 2ms, render: 66ms)
+ GET / 200 in 69ms (compile: 2ms, render: 67ms)
+ GET / 200 in 99ms (compile: 3ms, render: 96ms)
+ GET / 200 in 83ms (compile: 1939µs, render: 81ms)
+ GET / 200 in 76ms (compile: 1822µs, render: 74ms)
+ GET / 200 in 72ms (compile: 5ms, render: 67ms)
+ GET / 200 in 70ms (compile: 2ms, render: 68ms)
+ GET / 200 in 92ms (compile: 2ms, render: 90ms)
+ GET / 200 in 61ms (compile: 2ms, render: 59ms)
+ GET / 200 in 89ms (compile: 1785µs, render: 87ms)
+ GET / 200 in 88ms (compile: 6ms, render: 82ms)
+ GET / 200 in 105ms (compile: 1942µs, render: 104ms)
+ GET / 200 in 78ms (compile: 1873µs, render: 76ms)
+ GET / 200 in 64ms (compile: 1781µs, render: 62ms)
+ GET / 200 in 67ms (compile: 1830µs, render: 65ms)
+ GET / 200 in 84ms (compile: 5ms, render: 79ms)
+ GET / 200 in 57ms (compile: 1874µs, render: 55ms)
+ GET / 200 in 74ms (compile: 2ms, render: 72ms)
+ GET / 200 in 62ms (compile: 2ms, render: 60ms)
+ GET / 200 in 154ms (compile: 84ms, render: 69ms)
+ GET / 200 in 89ms (compile: 1982µs, render: 87ms)
+ GET / 200 in 96ms (compile: 3ms, render: 93ms)
+ GET / 200 in 73ms (compile: 2ms, render: 71ms)
+ GET / 200 in 93ms (compile: 1845µs, render: 92ms)
+⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET /auth 200 in 112ms (compile: 68ms, render: 43ms)
+ GET / 200 in 59ms (compile: 2ms, render: 57ms)
+ GET /chat 200 in 19ms (compile: 8ms, render: 11ms)
+ GET / 200 in 27ms (compile: 1850µs, render: 25ms)
+ GET / 200 in 59ms (compile: 1987µs, render: 57ms)
+ GET /auth 200 in 14ms (compile: 2ms, render: 12ms)
+ GET /profile 200 in 20ms (compile: 9ms, render: 11ms)
+ GET / 200 in 31ms (compile: 1952µs, render: 29ms)
+ GET / 200 in 68ms (compile: 1915µs, render: 66ms)
+⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET / 200 in 300ms (compile: 49ms, render: 251ms)
+⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET /chat 200 in 51ms (compile: 36ms, render: 15ms)
+ GET / 200 in 59ms (compile: 2ms, render: 57ms)
+⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET /profile 200 in 72ms (compile: 49ms, render: 23ms)
+ GET /chat 200 in 12ms (compile: 1976µs, render: 10ms)
+⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET /user?uid=SBKcrPWiePWBBWTGatvWEq0LA8R2 200 in 79ms (compile: 54ms, render: 25ms)
+ GET / 200 in 95ms (compile: 3ms, render: 92ms)
+ GET / 200 in 92ms (compile: 6ms, render: 86ms)
+ GET /profile 200 in 17ms (compile: 3ms, render: 14ms)
+ GET /chat 200 in 15ms (compile: 2ms, render: 12ms)
+⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET /user?uid=SBKcrPWiePWBBWTGatvWEq0LA8R2 200 in 79ms (compile: 55ms, render: 24ms)
+ GET / 200 in 71ms (compile: 1958µs, render: 70ms)
+ GET /profile 200 in 19ms (compile: 3ms, render: 16ms)
+⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET /settings 200 in 70ms (compile: 47ms, render: 23ms)
+ GET /profile 200 in 13ms (compile: 2ms, render: 11ms)
+⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET /auth 200 in 76ms (compile: 50ms, render: 26ms)
+ GET /auth 200 in 23ms (compile: 2ms, render: 21ms)
+ GET /profile 200 in 13ms (compile: 1919µs, render: 11ms)
+ GET / 200 in 46ms (compile: 2ms, render: 44ms)
+⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET /more 200 in 75ms (compile: 41ms, render: 33ms)
+⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET /genre 200 in 104ms (compile: 46ms, render: 58ms)
+ GET /profile 200 in 27ms (compile: 3ms, render: 24ms)
+ GET / 200 in 97ms (compile: 1798µs, render: 95ms)
+ GET / 200 in 65ms (compile: 1907µs, render: 63ms)
+ GET / 200 in 66ms (compile: 1837µs, render: 64ms)
+ GET /profile 200 in 13ms (compile: 2ms, render: 11ms)
+✓ Compiled in 195ms
+ GET / 200 in 80ms (compile: 3ms, render: 77ms)
+ GET /more 200 in 18ms (compile: 7ms, render: 11ms)
+✓ Compiled in 198ms
+⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET /nobar 200 in 56ms (compile: 38ms, render: 19ms)
+⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET /history 200 in 60ms (compile: 38ms, render: 22ms)
+ GET /genre 200 in 26ms (compile: 3ms, render: 23ms)
+⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET /genre/samurai 200 in 896ms (compile: 193ms, render: 703ms)
+ GET /genre/school 200 in 177ms (compile: 90ms, render: 86ms)
+ GET /api/anime/genre?page=2&genreId=school 200 in 868ms (compile: 518ms, render: 350ms)
+⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET /anime/kao-denai-kashiwada-kao-ota-sub-indo 200 in 973ms (compile: 148ms, render: 826ms)
+ GET /api/anime/genre?page=2&genreId=school 200 in 11ms (compile: 3ms, render: 8ms)
+ GET /api/anime/genre?page=3&genreId=school 200 in 369ms (compile: 2ms, render: 367ms)
+ GET /anime/mikadono-sashimai-angai-sub-indo 200 in 1833ms (compile: 69ms, render: 1764ms)
+ GET /api/anime/genre?page=2&genreId=school 200 in 10ms (compile: 3ms, render: 7ms)
+✓ Compiled in 160ms
+⚠ Fast Refresh had to perform a full reload when ./src/contexts/auth-context.tsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET /genre/school 200 in 456ms (compile: 132ms, render: 324ms)
+ GET /api/anime/genre?page=2&genreId=school 200 in 9ms (compile: 2ms, render: 7ms)
+ GET /api/anime/genre?page=3&genreId=school 200 in 8ms (compile: 2ms, render: 6ms)
+ GET /api/anime/genre?page=4&genreId=school 200 in 418ms (compile: 2ms, render: 416ms)
+ GET /api/anime/genre?page=5&genreId=school 200 in 332ms (compile: 2ms, render: 330ms)
+⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET /anime/shikanoko-nokotan-sub-indo 200 in 606ms (compile: 126ms, render: 481ms)
+⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET / 200 in 101ms (compile: 60ms, render: 40ms)
+⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET /chat 200 in 86ms (compile: 60ms, render: 26ms)
+⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET /user?uid=SBKcrPWiePWBBWTGatvWEq0LA8R2 200 in 82ms (compile: 58ms, render: 24ms)
+ GET / 200 in 256ms (compile: 2ms, render: 254ms)
+⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET /auth 200 in 89ms (compile: 74ms, render: 15ms)
+⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET /profile 200 in 89ms (compile: 74ms, render: 15ms)
+ GET / 200 in 98ms (compile: 3ms, render: 95ms)
+ GET /profile 200 in 20ms (compile: 2ms, render: 17ms)
+ GET / 200 in 92ms (compile: 2ms, render: 90ms)
+ GET / 200 in 84ms (compile: 1953µs, render: 82ms)
+ GET / 200 in 74ms (compile: 1888µs, render: 72ms)
+ GET / 200 in 74ms (compile: 2ms, render: 72ms)
+ GET / 200 in 79ms (compile: 1824µs, render: 77ms)
+⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET / 200 in 326ms (compile: 50ms, render: 276ms)
+⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET /profile 200 in 83ms (compile: 61ms, render: 22ms)
+⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET /auth 200 in 55ms (compile: 42ms, render: 13ms)
+ GET /auth 200 in 12ms (compile: 2ms, render: 9ms)
+ GET / 200 in 37ms (compile: 5ms, render: 32ms)
+ GET /auth 200 in 12ms (compile: 1801µs, render: 10ms)
+ GET / 200 in 40ms (compile: 10ms, render: 30ms)
+ GET / 200 in 34ms (compile: 1963µs, render: 32ms)
+ GET / 200 in 26ms (compile: 2ms, render: 24ms)
+⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET /more 200 in 63ms (compile: 45ms, render: 17ms)
+ GET / 200 in 110ms (compile: 2ms, render: 108ms)
+ GET / 200 in 68ms (compile: 2ms, render: 66ms)
+ GET / 200 in 66ms (compile: 1689µs, render: 64ms)
+ GET / 200 in 69ms (compile: 1882µs, render: 67ms)
+ GET /more 200 in 15ms (compile: 1896µs, render: 13ms)
+⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET /tos 200 in 88ms (compile: 72ms, render: 16ms)
+ GET /dmca 200 in 254ms (compile: 242ms, render: 12ms)
+ GET / 200 in 73ms (compile: 3ms, render: 70ms)
+⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET /more 200 in 57ms (compile: 42ms, render: 15ms)
+ GET / 200 in 77ms (compile: 1962µs, render: 75ms)
